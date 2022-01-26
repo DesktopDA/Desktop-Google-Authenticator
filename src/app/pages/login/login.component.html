@@ -1,39 +1,55 @@
-<div class="container" style="padding-top: 120px;">
-    <div class="row">
-        <div class="col-6">
-            <div class="mb-4">
-                <h3>Sign In</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
-              </div>
-              <form action="#" method="post">
-                <div class="form-group first">
-                  <label for="username">Usuario</label>
-                  <input type="text" class="form-control" id="username">
-  
-                </div>
-                <div class="form-group last mb-3">
-                  <label for="password">Contraseña</label>
-                  <input type="password" class="form-control" id="password">
-                  
-                </div>
-                
-                <div class="d-flex mb-5 align-items-center">
-                  <label class="control control--checkbox mb-0"><span class="caption" style="-webkit-text-stroke: 1px rgb(255,165,85);">Recuerdame</span>
-                    <input type="checkbox" checked="checked"/>
-                    <div class="control__indicator"></div>
-                  </label>
-                  <span class="ml-auto"><a href="#" class="forgot-pass" style="-webkit-text-stroke: 1px rgb(255,165,85);" >Olvide Contraseña</a></span> 
-                </div>
-  
-                <input type="submit" value="Log In" class="btn btn-block btn-success">
+<div class="container">
 
-              </form>
-        </div>
-        <div class="col-6">
-            <div>
-                <img src="assets/img/Inicio/login_1.jpg" width="600" height="400">
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                            <img src="assets/img/Inicio/login_1.jpg" width="450" height="450">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Bienvenido de Vuelta!</h1>
+                                </div>
+                                <form class="user">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-user"
+                                            id="exampleInputEmail" aria-describedby="emailHelp"
+                                            placeholder="Ingrese Usuario...">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Ingrese Contraseña">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox small">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck">
+                                            <label class="custom-control-label" for="customCheck">Recuerdame</label>
+                                        </div>
+                                    </div>
+                                    <a routerLink="../intranet/index" class="btn btn-primary btn-user btn-block">
+                                        Ingresar
+                                    </a>
+                                    <hr>
+                                </form>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" routerLink="../forgotpass">Olvidaste Contraseña?</a>
+                                </div>
+                                <div class="text-center">
+                                    <a class="small" routerLink="../register">Registrate!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+
     </div>
-    
+
 </div>
