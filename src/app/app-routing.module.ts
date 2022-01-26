@@ -4,9 +4,9 @@ import { BookingComponent } from "./pages/booking/booking.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { RegistryComponent } from "./pages/registry/registry.component";
-import { IndexComponent } from "./intranet/index/index.component";
 import { ForgotpassComponent } from "./pages/forgotpass/forgotpass.component";
 import { RegisterComponent } from "./pages/register/register.component";
+import { IndexComponent } from "./pages/index/index.component";
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent },

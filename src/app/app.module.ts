@@ -11,7 +11,6 @@ import { RegistryComponent } from './pages/registry/registry.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ForgotpassComponent } from './pages/forgotpass/forgotpass.component';
-import { AppIntranetModule } from './app-intranet/app-intranet.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +18,15 @@ import { AppIntranetModule } from './app-intranet/app-intranet.module';
     HomeComponent,
     LoginComponent,
     RegistryComponent,
-    BookingComponent
-    ForgotpassComponent
+    BookingComponent,
+    ForgotpassComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    AppIntranetModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
