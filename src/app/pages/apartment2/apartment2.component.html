@@ -1,0 +1,125 @@
+<div class= "container" style="padding-top: 120px ;">
+  <h3>Configuración de departamentos</h3>
+
+  
+    <div class="row 12">
+      <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid justify-content-start">
+            <button class= "btn btn-sm btn-outline-secondary" type="button">Consulta</button>
+			      <button class= "btn btn-outline-success me-2" type="button">Creación</button>
+        </form>
+      </nav>
+    </div>
+
+
+  <div class="row">
+      <div class="col-12">
+          <form [formGroup]="contactusForm">
+            <div class= "row"> 
+                <div class="col 6">
+                  <label for="exampleDataList" class="form-label">Condominio</label>
+                  <input class="form-control" list="datalistCondominios" id="exampleDataList" placeholder="">
+                  <datalist id="datalistCondominios">
+                    <option value="1">Las Orquideas 1</option>
+                    <option value="2">Las Orquideas 12</option>
+                    <option value="3">Las Orquideas 13</option>
+                    <option value="4">Las Orquideas 14</option>
+                  </datalist>
+
+                </div>
+  
+              <div class="col 6">
+                <label for="exampleDataList" class="form-label">Area</label>
+                <input class="form-control" list="datalistAreas" id="exampleDataList" placeholder="">
+                <datalist id="datalistAreas">
+                  <option value="1">Torre 1</option>
+                  <option value="2">Torre 12</option>
+                  <option value="3">Torre 13</option>
+                  <option value="4">Torre 14</option>
+                </datalist>
+
+              </div>
+            </div>
+
+            <div class= "row">
+                <div class="col 6">
+                  <label for="inputNroDepartamento">Nro de departamento</label>
+                  <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
+                </div>
+                          
+                <div class="col 6">
+                  <label for="inputArea">Área (m2)</label>
+                  <input type="text" class="form-control" id="inputArea" placeholder="">
+                </div>
+            </div>    
+
+            <div class= "row">
+                <div class="col 6">
+                  <label for="exampleDataList" class="form-label">Tipo de departamento</label>
+                  <input class="form-control" list="datalistTipoDepart" id="exampleDataList" placeholder="">
+                  <datalist id="datalistTipoDepart">
+                    <option value="1">Flat</option>
+                    <option value="2">Duplex</option>
+                    <option value="3">Triplex</option>
+                  </datalist>
+                </div>
+            
+             
+                <div class="col 3">
+                  <label for="inputPiso">Piso</label>
+                  <input type="text" class="form-control" id="inputPiso" placeholder="">
+                </div>  
+            </div> 
+            
+          
+
+
+            <div class= "row">
+              <div class="col 6">
+                <label for="exampleDataList" class="form-label">Cantidad de habitaciones</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                <datalist id="datalistOptions">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </datalist>
+
+
+              </div>
+             
+              <div class="col 6">
+                <label for="exampleDataList" class="form-label">Cantidad de baños</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                <datalist id="datalistOptions">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </datalist>
+              </div>  
+          </div>  
+
+          <div class= "row">
+                <div class="col 6">
+                  <label for="inputDNIPropietario">Nro doc del Propietario</label>
+                  <input type="text" class="form-control" id="inputDNIPropietario" placeholder="">
+                </div>  
+
+                <div class="col 6">
+                  <label for="inputDNIHabitante">Nro doc del Habitante</label>
+                  <input type="text" class="form-control" id="inputDNIHabitante" placeholder="">
+                </div>  
+          </div> 
+
+                <div class="col-6">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+ 
+
+          </form>
+      </div>
+  </div>
+</div>
+
+
