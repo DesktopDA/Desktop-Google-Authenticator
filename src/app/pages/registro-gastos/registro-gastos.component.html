@@ -1,0 +1,101 @@
+<form>  
+    <div>
+    <h1>REGISTRO DE GASTOS</h1>
+  </div>
+      <div class="form-group">
+        <label for="inputcodigo"><td><strong>Código de Registro:</strong></td></label>
+      <input type="text" class="form-control" id="inputcodigo" placeholder="">
+    </div>
+    <p></p>
+    <div class="form-group">
+      <label for="inputRuc"><td><strong>RUC:</strong></td></label>
+      <input type="text" class="form-control" id="inputRuc" placeholder="">
+    </div>
+    <p></p>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputRazonsocial"><td><strong>Razón Social:</strong></td></label>
+        <input type="text" class="form-control" id="inputRazonsocial">
+      </div>
+      <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputTipodeDocumento"><td><strong>Tipo de Documento:</strong></td></label>
+        <select id="inputTipodeDocumento" class="form-control">
+          <option selected>Seleccionar documento</option>
+          <option>Boleta</option>
+          <option>Factura</option>
+          <option>Guia de Remisión</option>
+        </select>
+      </div>
+      <p></p>
+      <label for="start"><td><strong>Fecha:</strong></td></label>
+  
+      <input type="date" id="start" name="trip-start"
+         value="2022-01-26"
+         min="1997-01-01" max="2022-12-31">
+         <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputTipodeGasto"><td><strong>Tipo de Gasto:</strong></td></label>
+        <select id="inputTipodeGasto" class="form-control">
+          <option selected>Seleccionar gasto</option>
+          <option>Mantenimiento de Piscina</option>
+          <option>Mantenimiento de Bomba de Agua</option>
+          <option>Mantenimiento de Ascensor</option>
+          <option>otros gastos</option>
+        </select>
+      </div>
+      <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputNTorre"><td><strong>Nro. de Torre:</strong></td></label>
+        <select id="inputNTorre" class="form-control">
+          <option selected>Seleccionar Torre:</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputNdpto"><td><strong>Nro. de Departamento:</strong></td></label>
+        <select id="inputNdpto" class="form-control">
+          <option selected>Seleccionar Departamento:</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>Toda la Torre</option>
+        </select>
+      </div>
+      <p></p>
+      <div class="form-group">
+        <label for="inputTotalaPagar"><td><strong>Total a Pagar:</strong></td></label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
+      </div>
+      <p></p>
+  </div>
+  <style>
+    .button { display: inline-block; padding: 15px 25px; font-size: 20px; cursor: pointer; text-align: center; text-decoration: none; 
+     outline: none; color: #fff; background-color: #4CAF50; border: none; border-radius: 15px; box-shadow: 0 9px #999;}
+    .button:hover {background-color: #3e8e41}
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    <button class="button">REGISTRAR</button>
+    <p></p>
+    <style>
+      .button { display: inline-block; padding: 15px 25px; font-size: 20px; cursor: pointer; text-align: center; text-decoration: none; 
+       outline: none; color: #fff; background-color: #4CAF50; border: none; border-radius: 15px; box-shadow: 0 9px #999;}
+      .button:hover {background-color: #3e8e41}
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+  </form>
