@@ -11,6 +11,7 @@ import { RegistryComponent } from './pages/registry/registry.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ForgotpassComponent } from './pages/forgotpass/forgotpass.component';
+import { Apartment1Component } from './pages/apartment1/apartment1.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ForgotpassComponent } from './pages/forgotpass/forgotpass.component';
     RegistryComponent,
     BookingComponent,
     ForgotpassComponent,
-    RegisterComponent
+    RegisterComponent,
+    Apartment1Component
   ],
   imports: [
     BrowserModule,
