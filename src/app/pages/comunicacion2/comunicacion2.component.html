@@ -1,0 +1,75 @@
+<div class= "container" style="padding-top: 120px ;">
+  <h3>Comunicaciones</h3>
+
+  
+    <div class="row 12">
+      <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid justify-content-start">
+            <button class= "btn btn-sm btn-outline-secondary" type="button">Consulta</button>
+			      <button class= "btn btn-outline-success me-2" type="button">Registro</button>
+        </form>
+      </nav>
+    </div>
+
+
+  <div class="row">
+      <div class="col-12">
+          <form [formGroup]="contactusForm">
+            <div class= "row"> 
+                <div class="col 6">
+                  <label for="exampleDataList" class="form-label">Tipo comunicación</label>
+                  <input class="form-control" list="datalistTipoComunic" id="exampleDataList" placeholder="">
+                  <datalist id="datalistTipoComunic">
+                    <option value="1">Aviso</option>
+                    <option value="2">Alerta</option>
+                  </datalist>
+                </div>
+  
+            <div class="col 6">
+                  <label for="inputAsunto">Asunto</label>
+                  <input type="text" class="form-control" id="inputAsunto" placeholder="">
+                </div>
+            </div>
+           
+            <div class= "row">
+              <div class="col 6">
+                <label for="exampleDataList" class="form-label">Importancia</label>
+                <input class="form-control" list="datalistImportancia" id="exampleDataList" placeholder="">
+                <datalist id="datalistImportancia">
+                  <option value="3">Alta</option>
+                  <option value="2">Media</option>
+                  <option value="1">Baja</option>
+                </datalist>
+              </div>
+                          
+                <div class="col 6">
+                  <label for="inputPara">Para </label>
+                  <input type="text" class="form-control" id="inputPara" placeholder="">
+                </div>
+            </div>    
+
+            <div class= "row">
+              <div class="col 6">
+                <label for="inputFecha">Vencimiento </label>
+                <input type="text" class="form-control" id="inputFecha" placeholder="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensaje</label>
+              <textarea class="form-control" id="exampleFormMensaje" rows="6"></textarea>
+            </div>
+
+            
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              
+
+
+          </form>
+      </div>
+  </div>
+</div>
+
+
