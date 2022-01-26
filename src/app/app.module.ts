@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LoginComponent } from './pages/login/login.component';
+import { RegistryComponent } from './pages/registry/registry.component';
+import { BookingComponent } from './pages/booking/booking.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ForgotpassComponent } from './pages/forgotpass/forgotpass.component';
 import { AppIntranetModule } from './app-intranet/app-intranet.module';
@@ -16,7 +18,8 @@ import { AppIntranetModule } from './app-intranet/app-intranet.module';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent,
+    RegistryComponent,
+    BookingComponent
     ForgotpassComponent
   ],
   imports: [
