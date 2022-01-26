@@ -1,0 +1,117 @@
+<section id="container">
+    <div class="title_page">
+      <h1>EMISIÓN DE BOLETA</h1>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputTipodeDocumento"><td><strong>Tipo de Documento:</strong></td></label>
+      <select id="inputTipodeDocumento" class="form-control">
+        <option selected>Seleccionar documento</option>
+        <option>Boleta</option>
+        <option>Factura</option>
+        <option>Guia de Remisión</option>
+      </select>
+    </div>
+    <p></p>
+    <div class="datos_cliente">
+          <form action="" name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
+        <input type="hidden" name="action" value="addCliente">
+        <input type="hidden" id="idcliente" name="idcliente" value="" required>
+        <div class="wd30">
+          <label><td><strong>Nombres y Apellidos:</strong></td></label>
+          <input type="text" name="dni_cliente" id="dni_cliente">
+        </div>
+        <p></p>
+        <div class="form-group col-md-4">
+          <label for="inputNTorre"><td><strong>Nro. de Torre:</strong></td></label>
+          <select id="inputNTorre" class="form-control">
+            <option selected>Seleccionar Torre:</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <p></p>
+        <div class="form-group col-md-4">
+          <label for="inputNdpto"><td><strong>Nro. de Departamento:</strong></td></label>
+          <select id="inputNdpto" class="form-control">
+            <option selected>Seleccionar Departamento:</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>Toda la Torre</option>
+          </select>
+        </div>
+        <p></p>
+      
+      <button class="button">Consulta</button>
+      <p></p>
+      <style>
+        .button { display: inline-block; padding: 10px 20px; font-size: 15px; cursor: pointer; text-align: center; text-decoration: none; 
+         outline: none; color: #fff; background-color: #d36c27; border: none; border-radius: 15px; box-shadow: 0 9px #999;}
+        .button:hover {background-color: #d36c27}
+        .button:active {
+          background-color: #d36c27;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        </style>  
+        
+      </form>
+    </div>
+    <style>
+      .demo {
+        width:100%;
+        height:100%;
+        border:2px sólido #F2BA40;
+        border-collapse:colapso;
+        border-spacing:4px;
+        padding:5px;
+      }
+      .demo th {
+        border:2px sólido #F2BA40;
+        padding:5px;
+        background:#F0F0F0;
+      }
+      .demo td {
+        border:2px sólido #F2BA40;
+        text-align:centrar;
+        padding:5px;
+        background:#EEEAD8;
+      }
+    </style>
+    <table class="demo">
+      <caption><strong>DETALLE DE GASTOS COMUNES</strong> </caption>
+      <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Monto a Pagar</th>
+        <th>Mostrar Detalle</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>

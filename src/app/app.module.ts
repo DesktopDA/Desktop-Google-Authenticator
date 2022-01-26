@@ -16,6 +16,7 @@ import { Apartment2Component } from './pages/apartment2/apartment2.component';
 import { Comunicacion1Component } from './pages/comunicacion1/comunicacion1.component';
 import { Comunicacion2Component } from './pages/comunicacion2/comunicacion2.component';
 import { RegistroGastosComponent } from './pages/registro-gastos/registro-gastos.component';
+import { EmitirBoletaComponent } from './pages/emitir-boleta/emitir-boleta.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RegistroGastosComponent } from './pages/registro-gastos/registro-gastos
     Apartment2Component,
     Comunicacion1Component,
     Comunicacion2Component,
-    RegistroGastosComponent
+    RegistroGastosComponent,
+    EmitirBoletaComponent
   ],
   imports: [
     BrowserModule,
