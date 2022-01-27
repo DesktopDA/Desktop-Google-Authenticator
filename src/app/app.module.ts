@@ -17,6 +17,7 @@ import { Comunicacion1Component } from './pages/comunicacion1/comunicacion1.comp
 import { Comunicacion2Component } from './pages/comunicacion2/comunicacion2.component';
 import { RegistroGastosComponent } from './pages/registro-gastos/registro-gastos.component';
 import { EmitirBoletaComponent } from './pages/emitir-boleta/emitir-boleta.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EmitirBoletaComponent } from './pages/emitir-boleta/emitir-boleta.compo
     Comunicacion1Component,
     Comunicacion2Component,
     RegistroGastosComponent,
-    EmitirBoletaComponent
+    EmitirBoletaComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,
