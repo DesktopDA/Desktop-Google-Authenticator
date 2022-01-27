@@ -14,12 +14,14 @@ import { Comunicacion2Component } from "./pages/comunicacion2/comunicacion2.comp
 import { RegistroGastosComponent } from "./pages/registro-gastos/registro-gastos.component";
 import { EmitirBoletaComponent } from "./pages/emitir-boleta/emitir-boleta.component";
 import { MaintenanceComponent } from "./pages/maintenance/maintenance.component";
+import { BookingConsultaComponent } from "./pages/booking-consulta/booking-consulta.component";
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent },
 { path: 'login', component: LoginComponent },
 { path: 'registry', component: RegistryComponent},
 { path: 'booking', component: BookingComponent},
+{ path: 'booking-consulta', component:BookingConsultaComponent},
 { path: 'register', component: RegisterComponent},
 { path: 'forgotpass', component: ForgotpassComponent},
 { path: 'index', component: IndexComponent},
