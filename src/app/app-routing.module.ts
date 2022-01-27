@@ -13,6 +13,7 @@ import { Comunicacion1Component } from "./pages/comunicacion1/comunicacion1.comp
 import { Comunicacion2Component } from "./pages/comunicacion2/comunicacion2.component";
 import { RegistroGastosComponent } from "./pages/registro-gastos/registro-gastos.component";
 import { EmitirBoletaComponent } from "./pages/emitir-boleta/emitir-boleta.component";
+import { MaintenanceComponent } from "./pages/maintenance/maintenance.component";
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
 { path: 'comunicacion2', component: Comunicacion2Component},
 { path: 'registro-gastos', component: RegistroGastosComponent},
 { path: 'emitir-boleta', component: EmitirBoletaComponent},
+{ path: 'maintenance', component: MaintenanceComponent},
 { path: '', redirectTo:'home', pathMatch:'full' }
 ]
 
