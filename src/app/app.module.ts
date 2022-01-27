@@ -19,6 +19,8 @@ import { RegistroGastosComponent } from './pages/registro-gastos/registro-gastos
 import { EmitirBoletaComponent } from './pages/emitir-boleta/emitir-boleta.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { BookingConsultaComponent } from './pages/booking-consulta/booking-consulta.component';
+import { HistorialPagosComponent } from './pages/historial-pagos/historial-pagos.component';
+import { HistorialVisitasComponent } from './pages/historial-visitas/historial-visitas.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { BookingConsultaComponent } from './pages/booking-consulta/booking-consu
     RegistroGastosComponent,
     EmitirBoletaComponent,
     MaintenanceComponent,
-    BookingConsultaComponent
+    BookingConsultaComponent,
+    HistorialPagosComponent,
+    HistorialVisitasComponent
   ],
   imports: [
     BrowserModule,
