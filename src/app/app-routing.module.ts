@@ -22,7 +22,7 @@ const routes: Routes = [
 { path: 'booking', component: BookingComponent},
 { path: 'register', component: RegisterComponent},
 { path: 'forgotpass', component: ForgotpassComponent},
-{ path: 'intranet/index', component: IndexComponent},
+{ path: 'index', component: IndexComponent},
 { path: 'apartment1', component: Apartment1Component},
 { path: 'apartment2', component: Apartment2Component},
 { path: 'comunicacion1', component: Comunicacion1Component},
