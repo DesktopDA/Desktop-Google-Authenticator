@@ -15,6 +15,8 @@ import { RegistroGastosComponent } from "./pages/registro-gastos/registro-gastos
 import { EmitirBoletaComponent } from "./pages/emitir-boleta/emitir-boleta.component";
 import { MaintenanceComponent } from "./pages/maintenance/maintenance.component";
 import { BookingConsultaComponent } from "./pages/booking-consulta/booking-consulta.component";
+import { HistorialPagosComponent } from "./pages/historial-pagos/historial-pagos.component";
+import { HistorialVisitasComponent } from "./pages/historial-visitas/historial-visitas.component";
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent },
@@ -32,6 +34,8 @@ const routes: Routes = [
 { path: 'registro-gastos', component: RegistroGastosComponent},
 { path: 'emitir-boleta', component: EmitirBoletaComponent},
 { path: 'maintenance', component: MaintenanceComponent},
+{ path: 'historial-pagos', component: HistorialPagosComponent},
+{ path: 'historial-visitas', component: HistorialVisitasComponent},
 { path: '', redirectTo:'home', pathMatch:'full' }
 ]
 
