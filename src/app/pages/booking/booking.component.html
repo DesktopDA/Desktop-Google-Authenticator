@@ -1,3 +1,18 @@
+<!-- <head>
+<script defer>
+  function toggle() {
+      var selector = document.getElementById('selector');
+      if (selector.value == "1") {
+        reserva.style.display = 'block';
+      }
+      else {
+        reserva.style.display = 'none';
+      }
+  }
+</script>
+</head> -->
+
+
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Condominios360</a>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Busqueda" aria-label="Search">
@@ -11,6 +26,8 @@
   </ul>
   <img src="assets/img/Inicio/barranegra.jpg" style="max-height:70px;max-width:500px;" class="img-fluid" alt="Responsive image">
 </nav>
+<body>
+  
 
 <div class= "container" style="padding-top: 30px ;">
     <h3>Reserva de Zonas Comunes</h3>
@@ -19,7 +36,6 @@
         <nav class="navbar navbar-light bg-transparent">
           <form class="container-fluid justify-content-start">
             <button class="btn btn-outline-success" type="button" routerLink="../booking-consulta" style="margin:5px">Consultar</button>
-            
             <button class="btn btn-outline-success active" type="button" routerLink="../booking" style="margin:5px">Crear Nueva</button>
           </form>
         </nav>
@@ -34,16 +50,17 @@
               <div class= "row"> 
                   <div class="col-6">
                     <label for="tipo_area" class="form-label" >Selecciona Area</label>
-                  </div>
-                  <div class="col-6">
-                    
-                    <select class="sel" id="sel"  onchange="toggle()">
+                    <select class="form-control form-control-md" id="tipo_area"  [(ngModel)]="selectedValue" name="tipo_area_nombres" required>
                       <option value="1" selected>Gimnasio</option>
                       <option value="2">Sala de Cine</option>
                       <option value="3">Sala de Reuniones</option>
                       <option value="4">Zona de Parrillas</option>
-                      <option value="5">Sala de Juegos (niños)</option>
+                      <option value="5">Sala de Juegos</option>
                     </select>
+                  </div>
+                  <div class="col-6">
+                    
+
                      
                   </div>
     
@@ -52,15 +69,35 @@
                 <p></p>
               </div>  
               <div class= "row">
+
                 <div class="col-6">
-                    <label for="inputFechaReserva">Fecha Reservada</label>
+                  <label for="inputFechaReserva">Fecha Reservada</label>
+                    <!-- shift+alt+a
+                    
                     <input type="date" class="form-control form-control-user"
                         id="fechaIng" placeholder="Fecha de reserva">
+                    -->
+                    <div class="form-group">
+                      <div class="input-group date" id="datepicker1">
+                        <input type="date" class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                      </div>
+                    </div>      
                 </div>
-                <div class="col 6" id="hora_reserva">
-                  <label for="inputNroDepartamento">Nro de departamento</label>
-                  <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
+
+                <div class="col-6" id="reserva"  *ngIf="selectedValue==1">
+                  <label for="inputhora_reserva">Hora Reservada</label>
+                    <div class="form-group">
+                      <div class="input-group time">
+                      <input type="time" min="06:00" max="23:00" required step="3600" class="form-control" id="inputhora_reserva" placeholder="">
+                      <span class="validity" ></span>
+                      </div>
+                    </div>
                 </div>
+                <!--  -->
+
 
               </div>    
   
@@ -118,7 +155,8 @@
    
                 </div>    
             </form>
+
         </div>
     </div>
   </div>
-  
+</body> 
