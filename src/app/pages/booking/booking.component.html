@@ -36,17 +36,17 @@
                     <label for="tipo_area" class="form-label" >Selecciona Area</label>
                   </div>
                   <div class="col-6">
-                    <select id="sel" onchange="toggle()">
+                    
+                    <select class="sel" id="sel"  onchange="toggle()">
                       <option value="1" selected>Gimnasio</option>
                       <option value="2">Sala de Cine</option>
                       <option value="3">Sala de Reuniones</option>
                       <option value="4">Zona de Parrillas</option>
                       <option value="5">Sala de Juegos (niños)</option>
-                  </select>
-  
+                    </select>
+                     
                   </div>
     
-
               </div>
               <div class= "row">
                 <p></p>
@@ -57,7 +57,7 @@
                     <input type="date" class="form-control form-control-user"
                         id="fechaIng" placeholder="Fecha de reserva">
                 </div>
-                <div class="col 6">
+                <div class="col 6" id="hora_reserva">
                   <label for="inputNroDepartamento">Nro de departamento</label>
                   <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
                 </div>
