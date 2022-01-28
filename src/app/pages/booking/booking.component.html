@@ -52,10 +52,12 @@
                     <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
                   </div>
                             
-                  <div class="col 6">
-                    <label for="inputArea">Área (m2)</label>
-                    <input type="text" class="form-control" id="inputArea" placeholder="">
-                  </div>
+                  <div class="col-6">
+                    <label for="inputFechaReserva">Fecha Reservada</label>
+                    <input type="date" class="form-control form-control-user"
+                        id="fechaIng" placeholder="Fecha de reserva">
+                </div>
+
               </div>    
   
               <div class= "row">
@@ -81,7 +83,7 @@
   
               <div class= "row">
                 <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Cantidad de habitaciones</label>
+                  <label for="exampleDataList" class="form-label">Nombre de Acompañante</label>
                   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
                   <datalist id="datalistOptions">
                     <option value="1">1</option>
@@ -94,7 +96,7 @@
                 </div>
                
                 <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Cantidad de baños</label>
+                  <label for="exampleDataList" class="form-label">Edad</label>
                   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
                   <datalist id="datalistOptions">
                     <option value="1">1</option>
@@ -105,17 +107,6 @@
                 </div>  
             </div>  
   
-            <div class= "row">
-                  <div class="col 6">
-                    <label for="inputDNIPropietario">Nro doc del Propietario</label>
-                    <input type="text" class="form-control" id="inputDNIPropietario" placeholder="">
-                  </div>  
-  
-                  <div class="col 6">
-                    <label for="inputDNIHabitante">Nro doc del Habitante</label>
-                    <input type="text" class="form-control" id="inputDNIHabitante" placeholder="">
-                  </div>  
-            </div> 
                 <div class="row justify-content-center">
                   <div class="text-center">
                     <button class="btn btn-outline-success" type="submit" >Guardar Reserva</button>
