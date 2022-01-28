@@ -32,31 +32,34 @@
         <div class="col-6">
             <form >
               <div class= "row"> 
-                  <div class="col 6">
-                    <label for="exampleDataList" class="form-label">Selecciona Area</label>
-                    <input class="form-control" list="datalistAreas" id="exampleDataList" placeholder="">
-                    <datalist id="datalistAreas">
-                      <option >Gimnasio</option>
-                      <option >Sala de Reuniones</option>
-                      <option >Sala de Cine</option>
-                      <option >Zona de Parrillas</option>
-                    </datalist>
+                  <div class="col-6">
+                    <label for="tipo_area" class="form-label" >Selecciona Area</label>
+                  </div>
+                  <div class="col-6">
+                    <select id="sel" onchange="toggle()">
+                      <option value="1" selected>Gimnasio</option>
+                      <option value="2">Sala de Cine</option>
+                      <option value="3">Sala de Reuniones</option>
+                      <option value="4">Zona de Parrillas</option>
+                      <option value="5">Sala de Juegos (niños)</option>
+                  </select>
   
                   </div>
     
 
               </div>
-  
               <div class= "row">
-                  <div class="col 6">
-                    <label for="inputNroDepartamento">Nro de departamento</label>
-                    <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
-                  </div>
-                            
-                  <div class="col-6">
+                <p></p>
+              </div>  
+              <div class= "row">
+                <div class="col-6">
                     <label for="inputFechaReserva">Fecha Reservada</label>
                     <input type="date" class="form-control form-control-user"
                         id="fechaIng" placeholder="Fecha de reserva">
+                </div>
+                <div class="col 6">
+                  <label for="inputNroDepartamento">Nro de departamento</label>
+                  <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
                 </div>
 
               </div>    
