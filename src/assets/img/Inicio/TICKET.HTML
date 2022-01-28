@@ -1,0 +1,97 @@
+<section id="container">
+  <div class="title_page">
+    <h1>GESTION DE TICKETS</h1>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputTipodeDocumento"><td><strong>Tipo de TICKETS:</strong></td></label>
+    <select id="inputTipodeDocumento" class="form-control">
+      <option selected>Seleccionar documento</option>
+      <option>Incidente</option>
+      <option>requerimiento</option>
+     </select>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12">Titulo<span class="required">*</span></label>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+        <input type="text" name="title" class="form-control" placeholder="Titulo" >
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripción <span class="required">*</span>
+    </label>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+        <textarea name="description" class="form-control col-md-7 col-xs-12"  placeholder="Descripción"></textarea>
+    </div>
+</div>
+
+
+  <p></p>
+  <div class="datos_cliente">
+        <form action="" name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
+      <input type="hidden" name="action" value="addCliente">
+      <input type="hidden" id="idcliente" name="idcliente" value="" required>
+         <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputNTorre"><td><strong>PROYECTO:</strong></td></label>
+        <select id="inputNTorre" class="form-control">
+          <option>CONDOMINIO</option>
+          <option>TORRE</option>
+          <option>DEPARTAMENTO</option>
+          <option>AREA VERDE</option>
+          <option>ZONA</option>
+          <option>ZONA</option>
+          <option>ZONA</option>
+        </select>
+      </div>
+      <p></p>
+      <div class="form-group col-md-4">
+        <label for="inputNdpto"><td><strong>CATEGORIA:</strong></td></label>
+        <select id="inputNdpto" class="form-control">
+          <option selected>Seleccionar Departamento:</option>
+          <option>ELECTRICIDAD</option>
+          <option>AGUA Y DESAGUE</option>
+          <option>SEGURIDAD</option>
+          <option>LIMPIEZA Y/O MANTENIMIENTO</option>
+          <option>SEGURIDAD ELECTRONICA</option>
+               </select>
+      </div>
+      <p></p>
+    
+      </form>
+  </div>
+  
+
+  <div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Prioridad
+    </label>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+        <select class="form-control" name="priority_id" >
+            <option selected="" value="">-- Selecciona --</option>
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Estado
+    </label>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+        <select class="form-control" name="status_id" >
+            <option selected="" value="">-- Selecciona --</option>
+            <option value="1">Pendiente</option>
+            <option value="2">En Proceso</option>
+            <option value="3">Solucionado</option>
+            <option value="4">Cancelado</option>
+        </select>
+    </div>
+</div>
+<div class="ln_solid">
+
+</div>
+<div class="form-group">
+    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+        <button id="save_data" type="submit" class="btn btn-success">Guardar</button>
+    </div>
+</div>    
