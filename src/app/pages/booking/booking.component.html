@@ -32,9 +32,9 @@
 <div class= "container" style="padding-top: 30px ;">
     <h3>Reserva de Zonas Comunes</h3>
     
-      <div class="row 12">
-        <nav class="navbar navbar-light bg-transparent">
-          <form class="container-fluid justify-content-start">
+      <div class="row-12">
+        <nav class="navbar navbar-light bg-transparent justify-content-between">
+          <form class="container-fluid">
             <button class="btn btn-outline-success" type="button" routerLink="../booking-consulta" style="margin:5px">Consultar</button>
             <button class="btn btn-outline-success active" type="button" routerLink="../booking" style="margin:5px">Crear Nueva</button>
           </form>
@@ -49,20 +49,57 @@
             <form >
               <div class= "row"> 
                   <div class="col-6">
-                    <label for="tipo_area" class="form-label" >Selecciona Area</label>
+                    <label for="tipo_area" class="form-label" >Selecciona Zona</label>
                     <select class="form-control form-control-md" id="tipo_area"  [(ngModel)]="selectedValue" name="tipo_area_nombres" required>
-                      <option value="1" selected>Gimnasio</option>
-                      <option value="2">Sala de Cine</option>
-                      <option value="3">Sala de Reuniones</option>
+                      <option value="0" selected>Gimnasio</option>
+                      <option value="1">Sala de Cine</option>
+                      <option value="2">Sala de Reuniones</option>
+                      <option value="3">Sala de Juegos</option>
                       <option value="4">Zona de Parrillas</option>
-                      <option value="5">Sala de Juegos</option>
                     </select>
                   </div>
-                  <div class="col-6">
-                    
+                  
+                    <div class="col-6" id="opciones"  *ngIf="selectedValue==0">
+                      <label for="zona">Area Reservada</label>
+                      <select class="form-control form-control-md" id="zona"  name="zona_nombres" required>
+                        <option value="0" selected>Gimnasio A</option>
+                      </select>   
+                    </div>
 
-                     
-                  </div>
+                    <div class="col-6" id="opciones"  *ngIf="selectedValue==1">
+                      <label for="zona">Area Reservada</label>
+                      <select class="form-control form-control-md" id="zona"  name="zona_nombres" required>
+                        <option value="cineA" selected>Cine A</option>
+                        <option value="cineB" >Cine B</option>
+                      </select>   
+                    </div> 
+
+                    <div class="col-6" id="opciones"  *ngIf="selectedValue==2">
+                      <label for="zona">Area Reservada</label>
+                      <select class="form-control form-control-md" id="zona"  name="zona_nombres" required>
+                        <option value="zoomA" selected>Reuniones A</option>
+                        <option value="zoomB" >Reuniones B</option>
+                      </select>   
+                    </div> 
+
+                    <div class="col-6" id="opciones"  *ngIf="selectedValue==3">
+                      <label for="zona">Area Reservada</label>
+                      <select class="form-control form-control-md" id="zona"  name="zona_nombres" required>
+                        <option value="juegosA" selected>Juegos A</option>
+                        <option value="juegosB" >Juegos B</option>
+                      </select>   
+                    </div> 
+
+                    <div class="col-6" id="opciones"  *ngIf="selectedValue==4">
+                      <label for="zona">Area Reservada</label>
+                      <select class="form-control form-control-md" id="zona"  name="zona_nombres" required>
+                        <option value="parrilla1" selected>Parrilla 1</option>
+                        <option value="parrilla2" >Parrilla 2</option>
+                        <option value="parrilla3" >Parrilla 3</option>
+                        <option value="parrilla4" >Parrilla 4</option>
+                      </select>   
+                    </div> 
+                  
     
               </div>
               <div class= "row">
@@ -87,7 +124,7 @@
                     </div>      
                 </div>
 
-                <div class="col-6" id="reserva"  *ngIf="selectedValue==1">
+                <div class="col-6" id="reserva"  *ngIf="selectedValue==0">
                   <label for="inputhora_reserva">Hora Reservada</label>
                     <div class="form-group">
                       <div class="input-group time">
@@ -101,50 +138,36 @@
 
               </div>    
   
-              <div class= "row">
-                  <div class="col 6">
-                    <label for="exampleDataList" class="form-label">Tipo de departamento</label>
-                    <input class="form-control" list="datalistTipoDepart" id="exampleDataList" placeholder="">
-                    <datalist id="datalistTipoDepart">
-                      <option value="1">Flat</option>
-                      <option value="2">Duplex</option>
-                      <option value="3">Triplex</option>
-                    </datalist>
+              <div class= "row" *ngIf="selectedValue==0">
+                  <div class="col-6" >
+                    <div class="form-check">
+                      <input type="checkbox" [(ngModel)]="isChecked" name="test" class="form-check-input" id="exampleCheck1">Registrar Acompañante<br />
+                      <!-- <label class="form-check-label" for="exampleCheck1">Registrar Acompañante</label> -->
+                    </div>
                   </div>
               
-               
-                  <div class="col 3">
-                    <label for="inputPiso">Piso</label>
-                    <input type="text" class="form-control" id="inputPiso" placeholder="">
-                  </div>  
               </div> 
               
             
   
   
-              <div class= "row">
-                <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Nombre de Acompañante</label>
-                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+              <div class= "row" *ngIf="isChecked==true && selectedValue==0">
+                <div class="col-6" >
+                  <label for="partner" class="form-label"></label>
+                  <input type="text" class="form-control" id="DNI" placeholder="Nombre de Acompañante" required>  
+              <!--<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nombre de Acompañante">
                   <datalist id="datalistOptions">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </datalist>
-  
-  
+                -->
                 </div>
                
-                <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Edad</label>
-                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                  <datalist id="datalistOptions">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </datalist>
+                <div class="col-6" >
+                  <label for="DNI" class="form-label"></label>
+                  <input type="text" class="form-control" id="DNI" placeholder="Doc. Identificación" required>
                 </div>  
             </div>  
   
@@ -153,7 +176,10 @@
                     <button class="btn btn-outline-success" type="submit" >Guardar Reserva</button>
                   </div>
    
-                </div>    
+                </div>  
+                
+
+                  
             </form>
 
         </div>

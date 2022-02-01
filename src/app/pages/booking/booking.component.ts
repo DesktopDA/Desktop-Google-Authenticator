@@ -15,7 +15,13 @@ export class BookingComponent implements OnInit {
   }
 
 
-  selectedValue = 1;
+  selectedValue = 0;
+
+  /* isChecked = 0; */
+ isChecked: boolean = false;
+
+  
+
 }
 
 
