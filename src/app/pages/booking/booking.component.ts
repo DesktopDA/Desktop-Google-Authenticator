@@ -20,7 +20,7 @@ export class BookingComponent implements OnInit {
   /* isChecked = 0; */
  isChecked: boolean = false;
 
-  
+ /* fecha_reserva = new Date().toISOString().split("T")[0];  */ 
 
 }
 
