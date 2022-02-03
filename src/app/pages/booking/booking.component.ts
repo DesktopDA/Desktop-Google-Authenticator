@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { getLocaleTimeFormat } from '@angular/common';
+import { Component, OnInit, ɵsetCurrentInjector } from '@angular/core';
 
 @Component({
   selector: 'app-booking',
@@ -21,6 +22,10 @@ export class BookingComponent implements OnInit {
  isChecked: boolean = false;
 
  /* fecha_reserva = new Date().toISOString().split("T")[0];  */ 
+
+fecha_min = new Date().toISOString().substring(0, 10);
+
+/* hora_min = (locale, with "HH:mm"); */
 
 }
 
