@@ -43,7 +43,8 @@
   
     <div class="row">
         <div class="col-6">
-          <img src="assets/img/Inicio/fondo_1.jpg" alt="fondo1" style="max-height:100%;max-width:100%;" class="img-fluid" alt="Responsive image">
+          <img src="assets/img/Inicio/fondo_1.jpg" alt="fondo1" style="max-height:100%;max-width:100%; opacity:0.75" class="img-fluid" alt="Responsive image">
+          <!-- la opacidad va dentro del style -->
         </div>
         <div class="col-6">
             <form >
@@ -99,7 +100,6 @@
                         <option value="parrilla4" >Parrilla 4</option>
                       </select>   
                     </div> 
-                  
     
               </div>
               <div class= "row">
@@ -108,15 +108,10 @@
               <div class= "row">
 
                 <div class="col-6">
-                  <label for="inputFechaReserva">Fecha Reservada</label>
-                    <!-- shift+alt+a
-                    
-                    <input type="date" class="form-control form-control-user"
-                        id="fechaIng" placeholder="Fecha de reserva">
-                    -->
+                  <label for="inputFecha_reserva">Fecha Reservada</label>
                     <div class="form-group">
                       <div class="input-group date" id="datepicker1">
-                        <input type="date" min="{{ fecha_min }}" class="form-control" >
+                        <input type="date" min="{{selectedValue==0?fecha_min_a:fecha_min_b}}" required class="form-control" id="inputFecha_reserva" placeholder="">
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -128,46 +123,38 @@
                   <label for="inputhora_reserva">Hora Reservada</label>
                     <div class="form-group">
                       <div class="input-group time">
-                      <input type="time" min="06:00" max="23:00" required step="3600" class="form-control" id="inputhora_reserva" placeholder="">
+                      <input type="time" min="{{hora_min}}" max="22:00" value="06:00" step="3600" required class="form-control" id="inputhora_reserva" placeholder="">
                       <span class="validity" ></span>
                       </div>
                     </div>
                 </div>
-                <!--  -->
-
 
               </div>    
   
               <div class= "row" *ngIf="selectedValue==0">
                   <div class="col-6" >
                     <div class="form-check">
-                      <input type="checkbox" [(ngModel)]="isChecked" name="test" class="form-check-input" id="exampleCheck1">Registrar Acompañante<br />
-                      <!-- <label class="form-check-label" for="exampleCheck1">Registrar Acompañante</label> -->
+                      <input type="checkbox" [(ngModel)]="isChecked" name="check_invitado" class="form-check-input" id="exampleCheck1">Registrar Acompañante<br />
                     </div>
                   </div>
               
               </div> 
-              
-            
-  
   
               <div class= "row" *ngIf="isChecked==true && selectedValue==0">
                 <div class="col-6" >
                   <label for="partner" class="form-label"></label>
-                  <input type="text" class="form-control" id="DNI" placeholder="Nombre de Acompañante" required>  
+                  <input type="text" class="form-control" id="DNI" placeholder="Nombre de Acompañante" required autocomplete="off">  
               <!--<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nombre de Acompañante">
                   <datalist id="datalistOptions">
                     <option value="1">1</option>
                     <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
                   </datalist>
                 -->
                 </div>
                
                 <div class="col-6" >
                   <label for="DNI" class="form-label"></label>
-                  <input type="text" class="form-control" id="DNI" placeholder="Doc. Identificación" required>
+                  <input type="text" class="form-control" id="DNI" placeholder="Doc. Identificación" required autocomplete="off">
                 </div>  
             </div>  
   
@@ -176,10 +163,10 @@
                     <button class="btn btn-outline-success" type="submit" >Guardar Reserva</button>
                     
                   </div>
-   
+                                      
                 </div>  
                 
-
+                <!-- {{ test }} -->  
                   
             </form>
 
