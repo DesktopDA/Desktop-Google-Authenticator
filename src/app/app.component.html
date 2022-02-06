@@ -1,53 +1,111 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav" style="opacity: 1;background-color: rgba(52,58,64,0.75);">
-  <div class="container">
-      <a class="navbar-brand js-scroll-trigger" routerLink="home" style="color: rgb(0, 0, 0);">Condominios360</a>
-      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(0, 0, 0);"><i class="fa fa-bars" style="color: rgba(0, 0, 0, 0.75);"></i></button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav navbar-nav ml-auto text-uppercase">
-              <!-- 
-              <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" href="#portfolio" style="color: rgb(255,165,85);">PROYECTOS</a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" href="#services" style="color: rgb(255,165,85);">DEPARTAMENTOs</a></li>
-              -->
-              <!-- 
-              <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="aboutus" style="color: rgb(255,165,85);">Logout</a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="team" style="color: rgb(255,165,85);">Intranet</a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="contactus" style="color: rgb(255,165,85);">Administracion</a></li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toogle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: rgb(255,165,85);">Perfil</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" routerLink="admin/project/new">Beneficios</a>
-                      <a class="dropdown-item" routerLink="admin/project/list">Precios</a>
-                      <a class="dropdown-item" routerLink="admin/apartment/new">Contactenos</a>
-                      <a class="dropdown-item" routerLink="admin/apartment/list">Valor</a>
-                  </div>
-              </li>
-              -->
-             
-                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="login" style="color: rgb(0, 0, 0);">Login</a></li>
-                
-                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="team" style="color: rgb(0, 0, 0);">Beneficios</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="contactus" style="color: rgb(0, 0, 0);">Precios</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toogle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: rgb(0, 0, 0);">Contactenos</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" routerLink="admin/project/new">Beneficios</a>
-                      <a class="dropdown-item" routerLink="admin/project/list">Precios</a>
-                      <a class="dropdown-item" routerLink="admin/apartment/new">Contactenos</a>
-                      <a class="dropdown-item" routerLink="admin/apartment/list">Valor</a>
-                  </div>
-                </li>
-            
-          </ul>
-          <!-- <a class="btn btn-primary text-black-50 border-dark" role="button" href="userLogin.html" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);border:none;">Acceder</a> -->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Condominios360</a>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Busqueda" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Salir</a>
+    </li>
+  </ul>
+ </nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Resumen <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../booking-consulta">
+              <span data-feather="file-text"></span>
+              Mis Reservas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index">
+              <span data-feather="file-text"></span>
+              Mis Gastos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../historial-pagos">
+              <span data-feather="file-text"></span>
+              Historial de Pagos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../historial-visitas">
+              <span data-feather="file-text"></span>
+              Historial de Visitas
+            </a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Bandeja de Entrada
+            </a>
+          </li>-->
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Administracion</span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="../apartment1">
+              <span data-feather="file-text"></span>
+              Modulo Departamentos
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../maintenance">
+                <span data-feather="file-text"></span>
+                Modulo Mantenimiento
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../comunicacion1">
+              <span data-feather="file-text"></span>
+              Modulo Comunicaciones
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../registro-gastos">
+              <span data-feather="file-text"></span>
+              Modulo Registro Gastos
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../emitir-boleta">
+              <span data-feather="file-text"></span>
+              Modulo Emision Boleta
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../register">
+                <span data-feather="file-text"></span>
+                Modulo Registro Visitas
+              </a>
+            </li>
+        </ul>
       </div>
-      <input type="search" placeholder="Busqueda" aria-label="Search">
-      <!--<button class="btn btn-outline-warning" type="submit">Busca</button>-->
+    </nav>
   </div>
-</nav>
-
-
+</div>
 
 
 <section style="min-height: 650px; padding-top: 0px; padding-bottom: 0px;">
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    
   <router-outlet></router-outlet>
+  </main>
 </section>

@@ -19,7 +19,7 @@ import { HistorialPagosComponent } from "./pages/historial-pagos/historial-pagos
 import { HistorialVisitasComponent } from "./pages/historial-visitas/historial-visitas.component";
 
 const routes: Routes = [
-{ path: 'home', component: HomeComponent },
+{ path: 'home', component: IndexComponent },
 { path: 'login', component: LoginComponent },
 { path: 'registry', component: RegistryComponent},
 { path: 'booking', component: BookingComponent},
@@ -36,7 +36,7 @@ const routes: Routes = [
 { path: 'maintenance', component: MaintenanceComponent},
 { path: 'historial-pagos', component: HistorialPagosComponent},
 { path: 'historial-visitas', component: HistorialVisitasComponent},
-{ path: '', redirectTo:'home', pathMatch:'full' }
+{ path: '', redirectTo:'login', pathMatch:'full' }
 ]
 
 @NgModule({
