@@ -1,5 +1,5 @@
 import { getLocaleTimeFormat } from '@angular/common';
-import { Component, OnInit, ɵsetCurrentInjector } from '@angular/core';
+import { Component, Input, OnInit, ɵsetCurrentInjector } from '@angular/core';
 
 @Component({
   selector: 'app-booking',
@@ -36,7 +36,7 @@ preguntar como hago para que sea una sola variable */
 /* fecha_min = this.selectedValue == 0? new Date().toISOString().substring(0, 10):new Date(Date.now()+1).toISOString().substring(0, 10); NO FUNCIONA*/
 
 
-test = new Date().getHours() + new Date().getMinutes()/60>6?new Date(new Date(new Date().setMinutes(0)).setHours(new Date(new Date().setMinutes(0)).getHours()+1)).toLocaleString('sv-SE').split(" ")[1].slice(0,5):"06:00";
+/* test = new Date().getHours() + new Date().getMinutes()/60>6?new Date(new Date(new Date().setMinutes(0)).setHours(new Date(new Date().setMinutes(0)).getHours()+1)).toLocaleString('sv-SE').split(" ")[1].slice(0,5):"06:00";  */
 
 /* test=new Date().getHours() + new Date().getMinutes()/60>1?new Date(new Date().setTime(new Date().getTime() + 1)).toLocaleString('sv-SE').split(" ")[1].slice(0,5):"01:00"; */
 /* test = new Date().getHours()+ new Date().getMinutes()/60>1?"si":"no"; */
@@ -51,7 +51,7 @@ hora_min = new Date().getHours() + new Date().getMinutes()/60>6? new Date(new Da
 /* test = new Date().toLocaleString('en-ca').split(",")[1].substring(1,6); FUNCIONA*/
 /* document.getElementById("hora_test").innerHTML = new Date().toLocaleDateString('en-ca').slice(1, 5); */
 
-
+test1 = document.getElementById("inputFecha_reserva")
 
 
 
