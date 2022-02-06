@@ -51,7 +51,7 @@ hora_min = new Date().getHours() + new Date().getMinutes()/60>6? new Date(new Da
 /* test = new Date().toLocaleString('en-ca').split(",")[1].substring(1,6); FUNCIONA*/
 /* document.getElementById("hora_test").innerHTML = new Date().toLocaleDateString('en-ca').slice(1, 5); */
 
-test1 = document.getElementById("inputFecha_reserva")
+test1 = (<HTMLInputElement>document.getElementById("inputFecha_reserva")).value
 
 
 
