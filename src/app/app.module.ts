@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LoginComponent } from './pages/login/login.component';
-import { RegistryComponent } from './pages/registry/registry.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ForgotpassComponent } from './pages/forgotpass/forgotpass.component';
@@ -21,14 +20,17 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 import { BookingConsultaComponent } from './pages/booking-consulta/booking-consulta.component';
 import { HistorialPagosComponent } from './pages/historial-pagos/historial-pagos.component';
 import { HistorialVisitasComponent } from './pages/historial-visitas/historial-visitas.component';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { UsuarioConsultaComponent } from './pages/usuario-consulta/usuario-consulta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegistryComponent,
     BookingComponent,
+    UsuarioComponent,
+    UsuarioConsultaComponent,
     ForgotpassComponent,
     RegisterComponent,
     Apartment1Component,

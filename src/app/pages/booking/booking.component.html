@@ -29,7 +29,7 @@
   
     <div class="row">
         <div class="col-6">
-          <img src="assets/img/Inicio/fondo_1.jpg" alt="fondo1" style="max-height:100%;max-width:100%; opacity:0.75" class="img-fluid" alt="Responsive image">
+          <img src="assets/img/Inicio/fondo_1.jpg" alt="fondo1" style="max-height:100%;max-width:100%; opacity:0.90" class="img-fluid" alt="Responsive image">
           <!-- la opacidad va dentro del style -->
         </div>
         <div class="col-6">
@@ -97,7 +97,7 @@
                   <label for="inputFecha_reserva">Fecha Reservada</label>
                     <div class="form-group">
                       <div class="input-group date" id="datepicker1">
-                        <input type="date" min="{{selectedValue==0?fecha_min_a:fecha_min_b}}" required class="form-control" id="inputFecha_reserva" placeholder="">
+                        <input type="date" min="{{selectedValue==0?fecha_min_a:fecha_min_b}}" value="{{selectedValue==0?fecha_min_a:fecha_min_b}}" [(ngModel)]="fecha_base" name="prueba_fecha_base" required class="form-control" id="inputFecha_reserva" placeholder="">
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -109,7 +109,7 @@
                   <label for="inputhora_reserva">Hora Reservada</label>
                     <div class="form-group">
                       <div class="input-group time">
-                      <input type="time" min="{{hora_min}}" max="22:00" value="06:00" step="3600" required class="form-control" id="inputhora_reserva" placeholder="">
+                      <input type="time" min="{{selectedValue==0 && fecha_base!=fecha_min_a?hora:hora_min}}" max="22:00" value="{{selectedValue==0 && fecha_base!=fecha_min_a?hora:hora_min}}" step="3600" required class="form-control" id="inputhora_reserva" placeholder="">
                       <span class="validity" ></span>
                       </div>
                     </div>
@@ -151,8 +151,12 @@
                   </div>
                                       
                 </div>  
-                
-                <!-- {{ test1 }} -->
+               
+               <!-- {{test5}} -->
+               {{fecha_base}}
+               ertyui  
+               {{fecha_min_a}}
+               <p id="demo"> </p>
                   
             </form>
 

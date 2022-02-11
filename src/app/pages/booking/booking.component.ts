@@ -1,5 +1,6 @@
 import { getLocaleTimeFormat } from '@angular/common';
-import { Component, Input, OnInit, ɵsetCurrentInjector } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChange, ɵsetCurrentInjector } from '@angular/core';
+import { FormControl, NgSelectOption } from '@angular/forms';
 
 @Component({
   selector: 'app-booking',
@@ -17,6 +18,11 @@ export class BookingComponent implements OnInit {
 
   selectedValue = 0;
 
+
+ 
+
+
+
   /* isChecked = 0; */
  isChecked: boolean = false;
 
@@ -24,6 +30,10 @@ export class BookingComponent implements OnInit {
 
 fecha_min_a = new Date().toLocaleDateString('en-ca').slice(0, 10);
 fecha_min_b = new Date(new Date().setDate(new Date().getDate() + 1)).toLocaleDateString('en-ca').slice(0, 10);
+
+fecha_base = this.selectedValue==0?this.fecha_min_a:this.fecha_min_b;
+
+
 
 /* fecha_min = this.selectedValue == 0? new Date().toLocaleDateString('en-ca').slice(0, 10):new Date(new Date().setDate(new Date().getDate() + 1)).toLocaleDateString('en-ca').slice(0, 10);
 preguntar como hago para que sea una sola variable */
@@ -44,19 +54,19 @@ preguntar como hago para que sea una sola variable */
 /* test = new Date(new Date().setHours(new Date().getHours() + 1 ) ).toLocaleString('sv-SE'); */
 /* hora_test = "06:00"; */
 
+
 hora_min = new Date().getHours() + new Date().getMinutes()/60>6? new Date(new Date(new Date().setMinutes(0)).setHours(new Date(new Date().setMinutes(0)).getHours()+1)).toLocaleString('sv-SE').split(" ")[1].slice(0,5) : "06:00";
+hora = "06:00";
 
 /* hora_min = new Date().getHours() + new Date().getMinutes()/60>1?new Date().toLocaleString('sv-SE').split(" ")[1].slice(0,5):"01:00"; */
-/* test = new Date().toLocaleString('sv-SE').split(" ")[1].slice(0,5); FUNCIONA MEJOR FORMATO 24HRS*/
+/* test = new Date().toLocaleString('sv-SE').split(" ")[1].slice(0,5); FUNCIONA MEJOR FORMATO 24HRS */
 /* test = new Date().toLocaleString('en-ca').split(",")[1].substring(1,6); FUNCIONA*/
 /* document.getElementById("hora_test").innerHTML = new Date().toLocaleDateString('en-ca').slice(1, 5); */
 
-test1 = (<HTMLInputElement>document.getElementById("inputFecha_reserva")).value
-
-
-
+qwer = (<HTMLInputElement>document.getElementById("inputFecha_reserva"));
+dateq = new Date();
+test5 = new FormControl(new Date()) /* new Date().toLocaleString('en-GB').split(" ")[0].slice(0,10).toString(); */
 
 
 }
-
 

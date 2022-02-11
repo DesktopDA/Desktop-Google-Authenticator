@@ -3,7 +3,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { BookingComponent } from "./pages/booking/booking.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { LoginComponent } from "./pages/login/login.component";
-import { RegistryComponent } from "./pages/registry/registry.component";
 import { ForgotpassComponent } from "./pages/forgotpass/forgotpass.component";
 import { RegisterComponent } from "./pages/register/register.component";
 import { IndexComponent } from "./pages/index/index.component";
@@ -17,13 +16,16 @@ import { MaintenanceComponent } from "./pages/maintenance/maintenance.component"
 import { BookingConsultaComponent } from "./pages/booking-consulta/booking-consulta.component";
 import { HistorialPagosComponent } from "./pages/historial-pagos/historial-pagos.component";
 import { HistorialVisitasComponent } from "./pages/historial-visitas/historial-visitas.component";
+import { UsuarioComponent } from "./pages/usuario/usuario.component";
+import { UsuarioConsultaComponent } from "./pages/usuario-consulta/usuario-consulta.component";
 
 const routes: Routes = [
 { path: 'home', component: IndexComponent },
 { path: 'login', component: LoginComponent },
-{ path: 'registry', component: RegistryComponent},
 { path: 'booking', component: BookingComponent},
 { path: 'booking-consulta', component:BookingConsultaComponent},
+{ path: 'usuario' , component: UsuarioComponent},
+{ path: 'usuario-consulta', component: UsuarioConsultaComponent},
 { path: 'register', component: RegisterComponent},
 { path: 'forgotpass', component: ForgotpassComponent},
 { path: 'index', component: IndexComponent},
