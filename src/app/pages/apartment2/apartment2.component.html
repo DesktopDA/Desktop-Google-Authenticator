@@ -18,103 +18,105 @@
 
 
       <div class="col-6">
-          <form >
-            <div class= "row"> 
+          <form [formGroup] = "apartment2Form">
+            <div class= "form-group"> 
                 <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Condominio</label>
-                  <input class="form-control" list="datalistCondominios" id="exampleDataList" placeholder="">
-                  <datalist id="datalistCondominios">
-                    <option value="1">Las Orquideas 1</option>
+                  <label for="Condominio" class="form-label">Condominio</label>
+                  <select class="form-control form-control-md" id="Condominio"   name="Condominio" placeholder="P">
+                    <option value="1" selected=""></option>
                     <option value="2">Las Orquideas 12</option>
                     <option value="3">Las Orquideas 13</option>
                     <option value="4">Las Orquideas 14</option>
-                  </datalist>
-
+                  </select>
                 </div>
   
               <div class="col 6">
-                <label for="exampleDataList" class="form-label">Area</label>
-                <input class="form-control" list="datalistAreas" id="exampleDataList" placeholder="">
-                <datalist id="datalistAreas">
-                  <option value="1">Torre 1</option>
+                <label for="AreaCondominio" class="form-label">Sector</label>
+                <select class="form-control form-control-md" id="AreaCondominio"   name="AreaCondominio" placeholder="P">
+                  <option value="1" selected=""></option>
                   <option value="2">Torre 12</option>
                   <option value="3">Torre 13</option>
                   <option value="4">Torre 14</option>
-                </datalist>
-
+                </select>
               </div>
             </div>
 
             <div class= "row">
-                <div class="col 6">
+              <div class="col 6">
+                <label for="inputDNIPropietario">Nro doc del Propietario</label>
+                <input type="text" class="form-control" id="inputDNIPropietario" placeholder="">
+              </div>  
+
+              <div class="col 6">
+                <label for="inputDNIHabitante">Nro doc del Habitante</label>
+                <input type="text" class="form-control" id="inputDNIHabitante" placeholder="">
+              </div>  
+        </div> 
+
+
+
+            <div class= "row">
+                <div class="col 2">
                   <label for="inputNroDepartamento">Nro de departamento</label>
                   <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
                 </div>
                           
-                <div class="col 6">
+                <div class="col 2">
                   <label for="inputArea">Área (m2)</label>
                   <input type="text" class="form-control" id="inputArea" placeholder="">
                 </div>
-            </div>    
+               
+            <div class="col 2">
+              <label for="inputPiso">Piso</label>
+              <input type="text" class="form-control" id="inputPiso" placeholder="">
+            </div> 
+
+          </div> 
+
+
 
             <div class= "row">
-                <div class="col 6">
-                  <label for="exampleDataList" class="form-label">Tipo de departamento</label>
-                  <input class="form-control" list="datalistTipoDepart" id="exampleDataList" placeholder="">
-                  <datalist id="datalistTipoDepart">
+                <div class="col 2">
+                  <label for="TipoDepartamento" class="form-label">Tipo de departamento</label>
+                  <select class="form-control form-control-md" id="TipoDepartamento"   name="TipoDepartamento" placeholder="P">
+                    <option value="0" selected=""></option>
                     <option value="1">Flat</option>
                     <option value="2">Duplex</option>
                     <option value="3">Triplex</option>
-                  </datalist>
+                  </select>
                 </div>
             
-             
-                <div class="col 3">
-                  <label for="inputPiso">Piso</label>
-                  <input type="text" class="form-control" id="inputPiso" placeholder="">
+                <div class="col 2">
+                  <label for="exampleDataList" class="form-label"># Habitaciones</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                  <datalist id="datalistOptions">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </datalist>
+  
+  
+                </div>
+               
+                <div class="col 2">
+                  <label for="exampleDataList" class="form-label"># Baños</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                  <datalist id="datalistOptions">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </datalist>
                 </div>  
+
             </div> 
             
-          
+      <p>
+        Datos del formulario : {{apartment2Form.value | json}}
+      </p>
 
 
-            <div class= "row">
-              <div class="col 6">
-                <label for="exampleDataList" class="form-label">Cantidad de habitaciones</label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                <datalist id="datalistOptions">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </datalist>
-
-
-              </div>
-             
-              <div class="col 6">
-                <label for="exampleDataList" class="form-label">Cantidad de baños</label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                <datalist id="datalistOptions">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </datalist>
-              </div>  
-          </div>  
-
-          <div class= "row">
-                <div class="col 6">
-                  <label for="inputDNIPropietario">Nro doc del Propietario</label>
-                  <input type="text" class="form-control" id="inputDNIPropietario" placeholder="">
-                </div>  
-
-                <div class="col 6">
-                  <label for="inputDNIHabitante">Nro doc del Habitante</label>
-                  <input type="text" class="form-control" id="inputDNIHabitante" placeholder="">
-                </div>  
-          </div> 
 
                 <div class="col-6">
                   <button class="btn btn-primary" type="submit">Submit form</button>

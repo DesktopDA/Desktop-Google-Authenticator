@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-apartment2',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Apartment2Component implements OnInit {
 
-  constructor() { }
+  apartment2Form = this.fb.group({
+    Condominio : [''] ,
+    AreaCondominio : [''],
+    DNIPropietario : [''],
+    DNIHabitante : [''],
+    NroDepartamento : ['']
+  });
+
+  constructor(
+    private fb:FormBuilder
+  ) { }
 
   ngOnInit(): void {
   }
