@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Condominios360</a>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Busqueda" aria-label="Search">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0 shadow" style="background-color: rgba(0, 0, 0, 0.075); border:none;" href="#">Condominios360</a>
+ <!--  <input class="form-control form-control-dark w-100" type="text" placeholder="Busqueda" aria-label="Search"> -->
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
       <a class="nav-link" href="#">Salir</a>
@@ -13,35 +13,49 @@
   <div class="row">
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Mis Accesos</span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+
         <ul class="nav flex-column">
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a class="nav-link active" href="#">
-              <span data-feather="home"></span>
-              Resumen <span class="sr-only">(current)</span>
+              <span data-feather="home" ></span>
+              Mis Accesos <span class="sr-only">(current)</span>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="../index">
+              <span data-feather="file-text"></span>
+              Gastos
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../booking-consulta">
               <span data-feather="file-text"></span>
-              Mis Reservas
+              Reservas
             </a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="../index">
+            <a class="nav-link" href="../comunicacion1">
               <span data-feather="file-text"></span>
-              Mis Gastos
+              Comunicaciones
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../historial-pagos">
               <span data-feather="file-text"></span>
-              Historial de Pagos
+              Mis Pagos
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../historial-visitas">
               <span data-feather="file-text"></span>
-              Historial de Visitas
+              Mis Visitas
             </a>
           </li>
           <!--
@@ -63,43 +77,38 @@
           <li class="nav-item">
             <a class="nav-link" href="../usuario">
               <span data-feather="file-text"></span>
-              Modulo Usuarios
+              Usuarios
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../apartment1">
               <span data-feather="file-text"></span>
-              Modulo Departamentos
+              Departamentos
             </a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="../maintenance">
                 <span data-feather="file-text"></span>
-                Modulo Mantenimiento
+                Mantenimiento
               </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../comunicacion1">
-              <span data-feather="file-text"></span>
-              Modulo Comunicaciones
-            </a>
-          </li>
+
           <li class="nav-item">
               <a class="nav-link" href="../registro-gastos">
               <span data-feather="file-text"></span>
-              Modulo Registro Gastos
+              Registro Gastos
               </a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="../emitir-boleta">
               <span data-feather="file-text"></span>
-              Modulo Emision Boleta
+              Emision Boleta
               </a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="../register">
                 <span data-feather="file-text"></span>
-                Modulo Registro Visitas
+               Registro Visitas
               </a>
             </li>
         </ul>
