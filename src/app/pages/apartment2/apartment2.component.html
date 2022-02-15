@@ -19,64 +19,73 @@
 
       <div class="col-6">
           <form [formGroup] = "apartment2Form">
-            <div class="row" > 
-                <div class="col 6">
-                <form [formGroup]="apartment2Form">
-                  <label for="Condominio" class="form-group">Condominio</label>
-                  <div class="col-6">
-                  <select class="form-group"  id="Condominio"   name="Condominio" placeholder="P" formControlName="Condominio">
-                    <option value="1" selected=""></option>
-                    <option value="2">Las Orquideas 12</option>
-                    <option value="3">Las Orquideas 13</option>
-                    <option value="4">Las Orquideas 14</option>
-      
-                  </select>
-                </div>  
-                </form>
-              </div>
+
+              <div class="row" > 
+                    <div class="col 6">
+                      <label for="Condominio" class="form-group">Condominio</label>
+                          <div class="col-6">
+                          <select class="form-group"  id="Condominio"   name="Condominio" placeholder="P" formControlName="Condominio">
+                            <option value="1" selected=""></option>
+                            <option value="2">Las Orquideas 12</option>
+                            <option value="3">Las Orquideas 13</option>
+                            <option value="4">Las Orquideas 14</option>
+                          </select>
+                          </div>  
+                    </div>
                 
-  
-              <div class="col 3">
-                <label for="AreaCondominio" class="form-label">Sector</label>
-                <select class="form-control form-control-md" id="AreaCondominio"   name="AreaCondominio" placeholder="P">
-                  <option value="1" selected=""></option>
-                  <option value="2">Torre 12</option>
-                  <option value="3">Torre 13</option>
-                  <option value="4">Torre 14</option>
-                </select>
-              </div>
+                    <div class="col 6">
+                      <label for="AreaCondominio" class="form-group">Sector</label>
+                            <div class="col-6"> 
+                            <select class="form-group" id="AreaCondominio"   name="AreaCondominio" placeholder="P"  formControlName="AreaCondominio">
+                              <option value="1" selected=""></option>
+                              <option value="2">Torre 12</option>
+                              <option value="3">Torre 13</option>
+                              <option value="4">Torre 14</option>
+                            </select>
+                            </div>
+                    </div>
 
             </div>
 
             <div class= "row">
-              <div class="col 6">
-                <label for="inputDNIPropietario">Nro doc del Propietario</label>
-                <input type="text" class="form-control" id="inputDNIPropietario" placeholder="">
-              </div>  
+                    <div class="col 6">
+                      <label for="inputDNIPropietario">Nro doc del Propietario</label>
+                            <div class = "col-6">
+                            <input type="text" formControlName="DNIPropietario" id="inputDNIPropietario" placeholder="">
+                            </div>       
+                    </div>  
 
-              <div class="col 6">
-                <label for="inputDNIHabitante">Nro doc del Habitante</label>
-                <input type="text" class="form-control" id="inputDNIHabitante" placeholder="">
-              </div>  
-        </div> 
+                    <div class="col 6">
+                      <label for="inputDNIHabitante">Nro doc del Habitante</label>
+                            <div class = "col-6">
+                              <input type="text" formControlName="DNIHabitante" id="inputDNIHabitante" placeholder="">
+                              </div>       
+                    </div>  
+            </div> 
 
 
 
             <div class= "row">
-                <div class="col 2">
-                  <label for="inputNroDepartamento">Nro de departamento</label>
-                  <input type="text" class="form-control" id="inputNroDepartamento" placeholder="">
-                </div>
-                          
-                <div class="col 2">
-                  <label for="inputArea">Área (m2)</label>
-                  <input type="text" class="form-control" id="inputArea" placeholder="">
-                </div>
-               
-            <div class="col 2">
-              <label for="inputPiso">Piso</label>
-              <input type="text" class="form-control" id="inputPiso" placeholder="">
-            </div> 
+                    <div class="col 2">
+                      <label for="inputNroDepartamento">Nro de departamento</label>
+                              <div class = "col-6">
+                                <input type="text" formControlName="NroDepartamento" id="inputNroDepartamento" placeholder="">
+                              </div>  
+                    </div>
+                              
+                    <div class="col 2">
+                      <label for="inputArea">Área (m2)</label>
+                                <div class = "col-6">
+                                  <input type="text" formControlName="Area" id="inputArea" placeholder="">
+                                </div>  
+                    </div>
+                  
+                    <div class="col 2">
+                      <label for="inputPiso">Piso</label>
+                                <div class = "col-6">
+                                  <input type="text" formControlName="Piso" id="inputPiso" placeholder="">
+                                </div>  
+                    </div> 
 
           </div> 
 
