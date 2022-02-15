@@ -13,7 +13,12 @@ export class Apartment2Component implements OnInit {
     AreaCondominio : [''],
     DNIPropietario : [''],
     DNIHabitante : [''],
-    NroDepartamento : ['']
+    NroDepartamento : [''],
+    Area : [''],
+    Piso : [''],
+    TipoDepartamento : [''],
+    CantHabitaciones : [''],
+    CantBanios : ['']
   });
 
   constructor(

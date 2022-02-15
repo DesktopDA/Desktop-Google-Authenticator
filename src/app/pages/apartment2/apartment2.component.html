@@ -19,18 +19,24 @@
 
       <div class="col-6">
           <form [formGroup] = "apartment2Form">
-            <div class= "form-group"> 
+            <div class="row" > 
                 <div class="col 6">
-                  <label for="Condominio" class="form-label">Condominio</label>
-                  <select class="form-control form-control-md" id="Condominio"   name="Condominio" placeholder="P">
+                <form [formGroup]="apartment2Form">
+                  <label for="Condominio" class="form-group">Condominio</label>
+                  <div class="col-6">
+                  <select class="form-group"  id="Condominio"   name="Condominio" placeholder="P" formControlName="Condominio">
                     <option value="1" selected=""></option>
                     <option value="2">Las Orquideas 12</option>
                     <option value="3">Las Orquideas 13</option>
                     <option value="4">Las Orquideas 14</option>
+      
                   </select>
-                </div>
+                </div>  
+                </form>
+              </div>
+                
   
-              <div class="col 6">
+              <div class="col 3">
                 <label for="AreaCondominio" class="form-label">Sector</label>
                 <select class="form-control form-control-md" id="AreaCondominio"   name="AreaCondominio" placeholder="P">
                   <option value="1" selected=""></option>
@@ -39,6 +45,7 @@
                   <option value="4">Torre 14</option>
                 </select>
               </div>
+
             </div>
 
             <div class= "row">
