@@ -25,6 +25,10 @@ export class Apartment2Component implements OnInit {
     private fb:FormBuilder
   ) { }
 
+  __onSubmit(){
+    alert("Mensaje de Prueba")
+  }
+
   ngOnInit(): void {
   }
 

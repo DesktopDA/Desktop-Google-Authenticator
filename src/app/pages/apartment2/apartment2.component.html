@@ -76,14 +76,14 @@
                     <div class="col 2">
                       <label for="inputArea">Área (m2)</label>
                                 <div class = "col-6">
-                                  <input type="text" formControlName="Area" id="inputArea" placeholder="">
+                                  <input type="number" formControlName="Area" id="inputArea" placeholder="">
                                 </div>  
                     </div>
                   
                     <div class="col 2">
                       <label for="inputPiso">Piso</label>
                                 <div class = "col-6">
-                                  <input type="text" formControlName="Piso" id="inputPiso" placeholder="">
+                                  <input type="number" formControlName="Piso" id="inputPiso" placeholder="">
                                 </div>  
                     </div> 
 
@@ -92,38 +92,30 @@
 
 
             <div class= "row">
-                <div class="col 2">
+                <div class="col 6">
                   <label for="TipoDepartamento" class="form-label">Tipo de departamento</label>
-                  <select class="form-control form-control-md" id="TipoDepartamento"   name="TipoDepartamento" placeholder="P">
-                    <option value="0" selected=""></option>
-                    <option value="1">Flat</option>
-                    <option value="2">Duplex</option>
-                    <option value="3">Triplex</option>
-                  </select>
+                          <div class="col-6" >
+                          <select class="form-group" id="TipoDepartamento"   name="TipoDepartamento" placeholder="P" formControlName="TipoDepartamento">
+                            <option value="0" selected=""></option>
+                            <option value="1">Flat</option>
+                            <option value="2">Duplex</option>
+                            <option value="3">Triplex</option>
+                          </select>
+                          </div> 
                 </div>
             
                 <div class="col 2">
-                  <label for="exampleDataList" class="form-label"># Habitaciones</label>
-                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                  <datalist id="datalistOptions">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </datalist>
-  
-  
+                  <label for="CantHabitaciones">Piso</label>
+                      <div class = "col-6">
+                        <input type="number" formControlName="CantHabitaciones" id="InputCantHabitaciones" placeholder="">
+                      </div>  
                 </div>
                
                 <div class="col 2">
-                  <label for="exampleDataList" class="form-label"># Baños</label>
-                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
-                  <datalist id="datalistOptions">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </datalist>
+                  <label for="CantBanios" class="form-label"># Baños</label>
+                      <div class = "col-6">
+                        <input type="number" formControlName="CantBanios" id="InputCantBanios" placeholder="">
+                      </div>  
                 </div>  
 
             </div> 
@@ -135,7 +127,7 @@
 
 
                 <div class="col-6">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <button (click)="__onSubmit()" class="btn btn-info btn-sm">Enviar</button>
                 </div>
  
 
