@@ -27,8 +27,8 @@ export class BookingComponent implements OnInit {
   }
 
 
-selectedValue = 0;
-nombre_zona = 0;
+selectedValue = null;
+nombre_zona = null;
 
   /* isChecked = 0; */
 isChecked: boolean = false;
@@ -73,6 +73,8 @@ hora = "06:00";
 qwer = (<HTMLInputElement>document.getElementById("inputFecha_reserva"));
 dateq = new Date();
 test5 = new FormControl(new Date()) /* new Date().toLocaleString('en-GB').split(" ")[0].slice(0,10).toString(); */
+
+
 
 
 }

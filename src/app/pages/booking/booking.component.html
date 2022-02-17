@@ -1,19 +1,4 @@
-<!-- <head>
-<script defer>
-  function toggle() {
-      var selector = document.getElementById('selector');
-      if (selector.value == "1") {
-        reserva.style.display = 'block';
-      }
-      else {
-        reserva.style.display = 'none';
-      }
-  }
-</script>
-</head> -->
 <body>
-  
-  
 
 <div class= "container" style="padding-top: 30px ;">
     <h3>Reserva de Zonas Comunes</h3>
@@ -36,8 +21,9 @@
             <form [formGroup] = "bookingForm">
               <div class= "row"> 
                   <div class="col-6">
-                    <label for="tipo_area" class="form-label" >Selecciona Zona</label>
-                    <select class="form-control form-control-md" id="tipo_area"  [(ngModel)]="selectedValue" name="tipo_area_nombres" formControlName="area" required >
+                    <!-- <label for="tipo_area" class="form-label" >Selecciona Zona</label> -->
+                    <select class="form-control form-control-md" id="tipo_area" [(ngModel)]="selectedValue" name="tipo_area_nombres" formControlName="area" required ng-change="form.$setPristine();">
+                      <option value="undefined" disabled [selected]="true">Selecciona Zona</option>
                       <option value="0">Gimnasio</option>
                       <option value="1">Sala de Cine</option>
                       <option value="2">Sala de Reuniones</option>
@@ -46,45 +32,37 @@
                     </select>
                   </div>
                   
-                  <div class="col-6" id="opciones"  *ngIf="selectedValue==0">
-                    <label for="zona">Area Reservada</label>
-                    <select class="form-control form-control-md" id="zona" [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
-                      <option value="0" selected>Gimnasio A</option>
+                  <div class="col-6" id="opciones">
+                    <!-- <label for="zona">Area Reservada</label> -->
+                    <select class="form-control form-control-md" *ngIf="selectedValue==null" id="zona" [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
+                    </select> 
+                    <select class="form-control form-control-md" *ngIf="selectedValue==0" id="zona" [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
+                      <option value="0">Gimnasio A</option>
                     </select>   
-                  </div>
-
-                  <div class="col-6" id="opciones"  *ngIf="selectedValue==1">
-                    <label for="zona">Area Reservada</label>
-                    <select class="form-control form-control-md" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
-                      <option value="0" selected>Cine A</option>
+                    <select class="form-control form-control-md" *ngIf="selectedValue==1" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
+                      <option value="0" >Cine A</option>
                       <option value="1" >Cine B</option>
-                    </select>   
-                  </div> 
-
-                  <div class="col-6" id="opciones"  *ngIf="selectedValue==2">
-                    <label for="zona">Area Reservada</label>
-                    <select class="form-control form-control-md" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
-                      <option value="0" selected>Reuniones A</option>
+                    </select>
+                    <select class="form-control form-control-md" *ngIf="selectedValue==2" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
+                      <option value="0" >Reuniones A</option>
                       <option value="1" >Reuniones B</option>
-                    </select>   
-                  </div> 
-
-                  <div class="col-6" id="opciones"  *ngIf="selectedValue==3">
-                    <label for="zona">Area Reservada</label>
-                    <select class="form-control form-control-md" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                    </select>
+                    <select class="form-control form-control-md" *ngIf="selectedValue==3" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
                       <option value="0" selected>Juegos A</option>
                       <option value="1" >Juegos B</option>
-                    </select>   
-                  </div> 
-
-                  <div class="col-6" id="opciones"  *ngIf="selectedValue==4">
-                    <label for="zona">Area Reservada</label>
-                    <select class="form-control form-control-md" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                    </select>
+                    <select class="form-control form-control-md" *ngIf="selectedValue==4" id="zona"  [(ngModel)]="nombre_zona" name="zona_nombres" formControlName="zona" required>
+                      <option value="undefined" disabled [selected]="true">Area Reservada</option>
                       <option value="0" selected>Parrilla 1</option>
                       <option value="1" >Parrilla 2</option>
                       <option value="2" >Parrilla 3</option>
                       <option value="3" >Parrilla 4</option>
-                    </select>   
+                    </select>          
                   </div> 
     
               </div>
@@ -97,7 +75,7 @@
                   <label for="inputFecha_reserva">Fecha Reservada</label>
                     <div class="form-group">
                       <div class="input-group date" id="datepicker1">
-                        <input type="date" min="{{selectedValue==0?fecha_min_a:fecha_min_b}}" value="{{selectedValue==0?fecha_min_a:fecha_min_b}}" [(ngModel)]="fecha_base" name="prueba_fecha_base" required class="form-control" id="inputFecha_reserva" formControlName="fecha_reserva" placeholder="">
+                        <input type="date" min="{{selectedValue==0?fecha_min_a:fecha_min_b}}" value="{{selectedValue==0?fecha_min_a:fecha_min_b}}" [(ngModel)]="fecha_base" name="prueba_fecha_base" required class="form-control" id="inputFecha_reserva" formControlName="fecha_reserva" placeholder="Fecha Reservada">
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -149,20 +127,16 @@
                     <button class="btn btn-outline-success" type="submit" >Guardar Reserva</button>
                     
                   </div>
-                                      
                 </div>  
                
                <!-- {{test5}} -->
-
-               
-               {{fecha_base}}
+<!--                {{fecha_base}}
                ertyui  
                {{fecha_min_a}}
                <p id="demo"> </p>
-               <p> datos json {{bookingForm.value | json }}</p>
+               <p> datos json {{bookingForm.value | json }}</p> -->
                   
             </form>
-
         </div>
     </div>
   </div>
