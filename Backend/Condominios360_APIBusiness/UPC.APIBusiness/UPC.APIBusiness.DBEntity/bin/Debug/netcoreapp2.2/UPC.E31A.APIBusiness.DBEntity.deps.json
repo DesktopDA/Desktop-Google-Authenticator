@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "UPC.E31A.APIBusiness.DBEntity/1.0.0": {
+        "runtime": {
+          "UPC.E31A.APIBusiness.DBEntity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UPC.E31A.APIBusiness.DBEntity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

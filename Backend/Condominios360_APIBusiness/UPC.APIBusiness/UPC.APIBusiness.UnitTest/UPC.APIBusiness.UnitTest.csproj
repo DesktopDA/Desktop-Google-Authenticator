@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\UPC.APIBusiness.DBContext\UPC.APIBusiness.DBContext.csproj">
+		<Project>{7ac3d98d-f2fa-443e-8518-67cba197f97b}</Project>
+		<Name>UPC.APIBusiness</Name>
+	</ProjectReference>
+	
+	<ProjectReference Include="..\UPC.APIBusiness.API\UPC.APIBusiness.API.csproj">
+		<Project>{7ac3d98d-f2fa-443e-8518-67cba197f97b}</Project>
+		<Name>UPC.APIBusiness</Name>
+	</ProjectReference>
+	
+  </ItemGroup>
+
+</Project>

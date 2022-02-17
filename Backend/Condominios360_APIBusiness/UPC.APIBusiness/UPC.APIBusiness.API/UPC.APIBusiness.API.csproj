@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+	<ProjectGuid>{3E9C5060-8A75-4963-897B-496525EF3F79}</ProjectGuid>
+	<RootNamespace>UPC.APIBusiness.API</RootNamespace>
+	<AssemblyName>UPC.APIBusiness.API</AssemblyName>
+	<ProjectTypeGuids>{4D0E4FB7-2DBB-4721-A599-956925840139};{A3A379D7-720D-4E19-8AAA-50B5FE21D977}</ProjectTypeGuids>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>XML\API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="FirebaseAdmin" Version="1.15.0" />
+	  <PackageReference Include="IdentityServer4" Version="3.0.2" />
+	  <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.1" />
+	  <PackageReference Include="NLog" Version="4.6.8" />
+	  <PackageReference Include="NSwag.Annotations" Version="13.8.2" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0" />
+	  <PackageReference Include="System.DirectoryServices" Version="5.0.0" />
+	  <PackageReference Include="System.IO.Packaging" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UPC.APIBusiness.DBContext\UPC.APIBusiness.DBContext.csproj">
+		<Project>{7ac3d98d-f2fa-443e-8518-67cba197f97b}</Project>
+		<Name>UPC.APIBusiness</Name>
+	</ProjectReference>
+    <ProjectReference Include="..\UPC.APIBusiness.DBEntity\UPC.APIBusiness.DBEntity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="XML\" />
+  </ItemGroup>
+
+</Project>

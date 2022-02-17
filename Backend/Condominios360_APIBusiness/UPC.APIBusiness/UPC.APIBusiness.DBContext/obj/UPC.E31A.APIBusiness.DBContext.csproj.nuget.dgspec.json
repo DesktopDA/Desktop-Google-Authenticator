@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBContext\\UPC.E31A.APIBusiness.DBContext.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBContext\\UPC.E31A.APIBusiness.DBContext.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBContext\\UPC.E31A.APIBusiness.DBContext.csproj",
+        "projectName": "UPC.E31A.APIBusiness.DBContext",
+        "projectPath": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBContext\\UPC.E31A.APIBusiness.DBContext.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBContext\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\UPC.E31A.APIBusiness.DBEntity.csproj": {
+                "projectPath": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\UPC.E31A.APIBusiness.DBEntity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\UPC.E31A.APIBusiness.DBEntity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\UPC.E31A.APIBusiness.DBEntity.csproj",
+        "projectName": "UPC.E31A.APIBusiness.DBEntity",
+        "projectPath": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\UPC.E31A.APIBusiness.DBEntity.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\source\\repos\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness\\UPC.E31A.APIBusiness.DBEntity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
