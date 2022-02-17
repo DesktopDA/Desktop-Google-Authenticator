@@ -1,0 +1,12 @@
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\bin\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.deps.json
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\bin\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.dll
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\bin\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.pdb
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\bin\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBEntity.dll
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\bin\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBEntity.pdb
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.csprojAssemblyReference.cache
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.AssemblyInfoInputs.cache
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.AssemblyInfo.cs
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.csproj.CoreCompileInputs.cache
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.csproj.CopyComplete
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.dll
+C:\Users\James\source\repos\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness\UPC.E31A.APIBusiness.DBContext\obj\Debug\netcoreapp2.2\UPC.E31A.APIBusiness.DBContext.pdb

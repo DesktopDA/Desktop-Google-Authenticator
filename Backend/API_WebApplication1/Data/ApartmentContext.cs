@@ -10,7 +10,7 @@ namespace API_WebApplication1.Data
 
       }
 
-    public DbSet<Apartment> Apartment { get; set; }
+    public DbSet<Apartment> Departamentos { get; set; }
   }
 
 

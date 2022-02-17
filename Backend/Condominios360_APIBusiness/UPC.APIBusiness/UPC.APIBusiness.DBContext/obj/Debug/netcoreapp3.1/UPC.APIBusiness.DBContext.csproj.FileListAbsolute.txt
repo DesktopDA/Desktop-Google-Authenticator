@@ -1,0 +1,13 @@
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.deps.json
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.AssemblyReference.cache
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfoInputs.cache
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.AssemblyInfo.cs
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CoreCompileInputs.cache
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.csproj.CopyComplete
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.dll
+C:\Users\frank\Documents\GitHub\ProyE31A-Grupo2\Backend\Condominios360_APIBusiness\UPC.APIBusiness\UPC.APIBusiness.DBContext\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBContext.pdb
