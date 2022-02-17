@@ -8,6 +8,6 @@ namespace DBContext
    public interface iApartmentRepository
   {
     List<EntityApartment> GetApartments();
-    EntityApartment GetApartment(int id);
+    EntityApartment GetApartment(String id);
   }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -122,9 +122,10 @@ namespace API
 
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IProjectRepository, ProjectRepository>();
+            services.AddTransient<iApartmentRepository,ApartmentRepository>();
 
-            // ----------------------------------------------------------------
-            services.AddTransient<HttpClientAuthorizationDelegatingHandler>();
+      // ----------------------------------------------------------------
+      services.AddTransient<HttpClientAuthorizationDelegatingHandler>();
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
 

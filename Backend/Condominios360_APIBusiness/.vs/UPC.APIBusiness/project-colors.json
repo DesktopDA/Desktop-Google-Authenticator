@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "93d8111e-70e7-4ff4-a16c-7853282ee3ac": {
+      "ProjectGuid": "93d8111e-70e7-4ff4-a16c-7853282ee3ac",
+      "DisplayName": "UPC.APIBusiness.UnitTest",
+      "ColorIndex": 0
+    },
+    "3e9c5060-8a75-4963-897b-496525ef3f79": {
+      "ProjectGuid": "3e9c5060-8a75-4963-897b-496525ef3f79",
+      "DisplayName": "UPC.APIBusiness.API",
+      "ColorIndex": 1
+    },
+    "84c70db5-386e-4a03-b176-cdde14b2e371": {
+      "ProjectGuid": "84c70db5-386e-4a03-b176-cdde14b2e371",
+      "DisplayName": "UPC.APIBusiness.DBEntity",
+      "ColorIndex": 2
+    },
+    "3cb7210e-c87d-4222-8efd-8d81c780ddaf": {
+      "ProjectGuid": "3cb7210e-c87d-4222-8efd-8d81c780ddaf",
+      "DisplayName": "UPC.APIBusiness.DBContext",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

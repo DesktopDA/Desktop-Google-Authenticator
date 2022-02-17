@@ -10,7 +10,7 @@ namespace DBContext
 {
   public class ApartmentRepository : BaseRepository, iApartmentRepository
   {
-    public EntityApartment GetApartment(int id)
+    public EntityApartment GetApartment(String id)
     {
       var apartment = new EntityApartment();
 

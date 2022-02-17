@@ -76,6 +76,35 @@
             
             </summary>
         </member>
+        <member name="T:API.ApartmentController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:API.ApartmentController._apartmentRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:API.ApartmentController.#ctor(DBContext.iApartmentRepository)">
+            <summary>
+            
+            </summary>
+            <param name="apartmentRepository"></param>
+        </member>
+        <member name="M:API.ApartmentController.GetApartments">
+            <summary>
+            1er EndPoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.ApartmentController.GetApartment(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CodDepartamento"></param>
+            <returns></returns>
+        </member>
         <member name="T:API.ProjectController">
             <summary>
             
