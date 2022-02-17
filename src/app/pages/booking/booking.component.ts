@@ -1,6 +1,6 @@
 import { getLocaleTimeFormat } from '@angular/common';
 import { Component, Input, OnChanges, OnInit, SimpleChange, ɵsetCurrentInjector } from '@angular/core';
-import { FormControl, NgSelectOption } from '@angular/forms';
+import { FormBuilder, FormControl, NgSelectOption } from '@angular/forms';
 
 @Component({
   selector: 'app-booking',
@@ -8,23 +8,30 @@ import { FormControl, NgSelectOption } from '@angular/forms';
   styleUrls: ['./booking.component.css']
 })
 export class BookingComponent implements OnInit {
-   
+   bookingForm = this.fb.group ({
+      area:[''],
+      zona:[''],
+      fecha_reserva:[''],
+      hora_reserva:[''],
+      check_invitado:[''],
+      nombre_invitado:[''],
+      documento_invitado:['']
+   })
 
-  constructor() { }
+  constructor(
+     private fb: FormBuilder
+  ) { }
 
   ngOnInit(): void {
+     
   }
 
 
-  selectedValue = 0;
-
-
- 
-
-
+selectedValue = 0;
+nombre_zona = 0;
 
   /* isChecked = 0; */
- isChecked: boolean = false;
+isChecked: boolean = false;
 
 
 
