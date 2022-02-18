@@ -124,6 +124,7 @@ namespace API
             services.AddTransient<ICondominioRepository, CondominioRepository>();
             services.AddTransient<iApartmentRepository,ApartmentRepository>();
             services.AddTransient<IMensajeRepository, MensajeRepository>();
+            services.AddTransient<IBookingRepository, BookingRepository>();
 
       // ----------------------------------------------------------------
       services.AddTransient<HttpClientAuthorizationDelegatingHandler>();

@@ -18,7 +18,6 @@ namespace DBEntity
     public string DescTipoDepart { get; set; }
     public int NroPiso { get; set; }
     public int NroBaños { get; set; }
-
     public int NroHabitaciones { get; set; }
 
   }
