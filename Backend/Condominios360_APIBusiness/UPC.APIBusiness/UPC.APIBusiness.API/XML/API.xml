@@ -105,33 +105,69 @@
             <param name="CodDepartamento"></param>
             <returns></returns>
         </member>
-        <member name="T:API.ProjectController">
+        <member name="M:API.ApartmentController.Insert(DBEntity.EntityApartment)">
+            <summary>
+            
+            </summary>
+            <param name="apartment"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.CondominioController">
             <summary>
             
             </summary>
         </member>
-        <member name="F:API.ProjectController._projectRepository">
+        <member name="F:API.CondominioController._projectRepository">
             <summary>
             
             </summary>
         </member>
-        <member name="M:API.ProjectController.#ctor(DBContext.IProjectRepository)">
+        <member name="M:API.CondominioController.#ctor(DBContext.ICondominioRepository)">
             <summary>
             
             </summary>
             <param name="projectRepository"></param>
         </member>
-        <member name="M:API.ProjectController.GetProjects">
+        <member name="M:API.CondominioController.GetCondominios">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:API.ProjectController.GetProject(System.Int32)">
+        <member name="M:API.CondominioController.GetProject(System.Int32)">
             <summary>
             
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.MensajeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:API.MensajeController._mensajeRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:API.MensajeController.#ctor(DBContext.IMensajeRepository)">
+            <summary>
+            
+            </summary>
+            <param name="mensajeRepository"></param>
+        </member>
+        <member name="M:API.MensajeController.GetMensajes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.MensajeController.GetMensaje(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CodMensaje"></param>
             <returns></returns>
         </member>
         <member name="T:API.CustomErrorException">

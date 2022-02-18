@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Adina",
+            "price": "Desde S/.310 300",
+            "address": "Av. Alcazar 538 - Miraflores",
+            "image": "assets/img/proyects/proyect-Adina.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Boulogne",
+            "price": "Desde S/.421 200",
+            "address": "Av. Arica 615 - Breña",
+            "image": "assets/img/proyects/proyect-Boulogne.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Collings",
+            "price": "Desde S/.449 400",
+            "address": "Av. Sucre 461 - San Isidro",
+            "image": "assets/img/proyects/proyect-Collins.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Pacific Highway",
+            "price": "Desde S/.501 000",
+            "address": "Av. Donizetti 986 - San Borja",
+            "image": "assets/img/proyects/proyect-PacificHighway.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Thomas",
+            "price": "Desde S/.511 000",
+            "address": "Av. Palermo 283 - La Victoria",
+            "image": "assets/img/proyects/proyect-Thomas.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Timber",
+            "price": "Desde S/.544 000",
+            "address": "Av. San Diego 736 - Ate",
+            "image": "assets/img/proyects/proyect-Timber.jpg"
+        }
+    ]
+}

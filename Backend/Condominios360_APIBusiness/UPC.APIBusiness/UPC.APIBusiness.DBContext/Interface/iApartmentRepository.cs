@@ -7,7 +7,8 @@ namespace DBContext
 {
    public interface iApartmentRepository
   {
-    List<EntityApartment> GetApartments();
-    EntityApartment GetApartment(String id);
+    EntityBaseResponse GetApartments();
+    EntityBaseResponse GetApartment(String id);
+    EntityBaseResponse Insert(EntityApartment apartment);
   }
 }

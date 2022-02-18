@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:api":"nodemon server/server.js",
+    "start:server":"ng serve --proxy-config proxy.conf.js"
   },
   "private": true,
   "dependencies": {

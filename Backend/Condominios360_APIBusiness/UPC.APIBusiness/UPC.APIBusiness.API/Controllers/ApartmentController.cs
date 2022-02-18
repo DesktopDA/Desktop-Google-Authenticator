@@ -18,6 +18,7 @@ namespace API
   /// </summary>
   [Produces("application/json")]
   [Route("api/apartment")]
+  [ApiController]
   public class ApartmentController : Controller
   {
     /// <summary>
@@ -66,5 +67,21 @@ namespace API
       return Json(ret);
     }
 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="apartment"></param>
+    /// <returns></returns>
+    [Produces("application/json")]
+    [AllowAnonymous]
+    [HttpPost]
+    [Route("insert")]
+
+    public ActionResult Insert(EntityApartment apartment)
+    {
+      var ret = _apartmentRepository.Insert(apartment);
+      return Json(ret);
+    }
   }
 }

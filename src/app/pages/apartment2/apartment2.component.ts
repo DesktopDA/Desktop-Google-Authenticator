@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { ApartmentService } from 'src/app/services/apartment.service';
 
 @Component({
   selector: 'app-apartment2',
@@ -21,7 +22,9 @@ export class Apartment2Component implements OnInit {
     CantBanios : ['']
   });
 
+
   constructor(
+    private readonly as:ApartmentService,
     private fb:FormBuilder
   ) { }
 

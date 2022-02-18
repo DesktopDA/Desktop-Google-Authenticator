@@ -1,0 +1,30 @@
+{
+    "data": [
+    {
+      "codMensaje": "1         ",
+      "codTipoMensaje": "1         ",
+      "txAsuntoMensaje": "Reunión de propietarios Ene - 22",
+      "codImportancia": "1         ",
+      "fechaLimite": "0001-01-01T00:00:00",
+      "txBodyMensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
+      "activo": false,
+      "usuarioCrea": 0,
+      "usuarioModifica": 0,
+      "fechaCrea": "0001-01-01T00:00:00",
+      "fechaModifica": "0001-01-01T00:00:00"
+    },
+    {
+      "codMensaje": "2         ",
+      "codTipoMensaje": "2         ",
+      "txAsuntoMensaje": "Corte de servicio eléctrico - 14/01/2022",
+      "codImportancia": "2         ",
+      "fechaLimite": "0001-01-01T00:00:00",
+      "txBodyMensaje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      "activo": false,
+      "usuarioCrea": 0,
+      "usuarioModifica": 0,
+      "fechaCrea": "0001-01-01T00:00:00",
+      "fechaModifica": "0001-01-01T00:00:00"
+    }
+  ]
+}

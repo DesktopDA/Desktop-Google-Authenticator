@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4e93ad3b-acff-4492-ad35-f9a39ed21f05": {
+      "ProjectGuid": "4e93ad3b-acff-4492-ad35-f9a39ed21f05",
+      "DisplayName": "API_WebApplication1",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

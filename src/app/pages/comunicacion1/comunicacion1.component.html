@@ -17,37 +17,24 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="row">Nro</th>
+            <!-- <th scope="row">Nro</th> -->
+            <th scope="col">CodMensaje</th>
             <th scope="col">Asunto</th>
             <th scope="col">Importancia</th>
             <th scope="col">Vencimiento</th>
-            <th scope="col">De</th>
+
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Vencimiento de recibo Nro 2366</td>
-            <td>Alta</td>
-            <td>08/02/2022</td>
-            <td>Juan Carlos Aguilar</td>
+          <tr *ngFor="let a of mensajes">
+            <!-- <th scope="row">1</th> -->
+            <td>{{a.codMensaje}}</td>
+            <td>{{a.txAsuntoMensaje}}</td>
+            <td>{{a.codImportancia}}</td>
+            <td>{{a.fechaLimite}}</td>
           </tr>
 
-          <tr>
-            <th scope="row">2</th>
-            <td>Confirmación de reserva</td>
-            <td>Media</td>
-            <td>15/01/2022</td>
-            <td>Emma Ramos</td>
-          </tr>
 
-          <tr>
-            <th scope="row">3</th>
-            <td>Mantenimiento de ascensores</td>
-            <td>Media</td>
-            <td></td>
-            <td>Emma Ramos</td>
-          </tr>
 
 
         </tbody>

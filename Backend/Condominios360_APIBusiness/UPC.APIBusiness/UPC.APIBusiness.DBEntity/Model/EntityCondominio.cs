@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DBEntity
 {
-    public class EntityProject : EntityBase
+    public class EntityCondominio : EntityBase
     {
         public int idproyecto { get; set; }
         public string nombre { get; set; }

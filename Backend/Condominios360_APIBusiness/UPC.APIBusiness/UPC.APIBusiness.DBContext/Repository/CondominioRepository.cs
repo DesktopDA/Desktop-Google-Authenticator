@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
@@ -8,7 +8,7 @@ using Dapper;
 
 namespace DBContext
 {
-    public class ProjectRepository : BaseRepository, IProjectRepository
+    public class CondominioRepository : BaseRepository, ICondominioRepository
     {
         public EntityBaseResponse GetProject(int id)
         {
@@ -19,13 +19,13 @@ namespace DBContext
                 using (var db = GetSqlConnection())
                 {
                     var imagerepo = new ImageRepository();
-                    var project = new EntityProject();
+                    var project = new EntityCondominio();
                     const string sql = "usp_ObtenerProyecto";
                     
                     var p = new DynamicParameters();
                     p.Add(name: "@IDPROYECTO", value: id, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
-                    project = db.Query<EntityProject>(
+                    project = db.Query<EntityCondominio>(
                             sql: sql,
                             param: p,
                             commandType: CommandType.StoredProcedure
@@ -60,7 +60,7 @@ namespace DBContext
             return response;
         }
 
-        public EntityBaseResponse GetProjects()
+        public EntityBaseResponse GetCondominios()
         {
             var response = new EntityBaseResponse();
             
@@ -69,10 +69,10 @@ namespace DBContext
                 using (var db = GetSqlConnection())
                 {
                     var imagerepo = new ImageRepository();
-                    var projects = new List<EntityProject>();
+                    var projects = new List<EntityCondominio>();
                     const string sql = "usp_ListarProyectos";
 
-                    projects = db.Query<EntityProject>(
+                    projects = db.Query<EntityCondominio>(
                             sql: sql,
                             commandType: CommandType.StoredProcedure
                         ).ToList();
@@ -109,7 +109,7 @@ namespace DBContext
             return response;
         }
 
-        public EntityBaseResponse Insert(EntityProject project)
+        public EntityBaseResponse Insert(EntityCondominio project)
         {
             throw new NotImplementedException();
         }

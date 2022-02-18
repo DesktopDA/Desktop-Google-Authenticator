@@ -6,7 +6,7 @@ namespace DBEntity
 {
   public class EntityApartment : EntityBase
   {
-    public String CodDepartamento { get; set; }
+    public string CodDepartamento { get; set; }
     public string NumDepartamento { get; set; }
 
     public double AreaDepartamento { get; set; }

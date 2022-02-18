@@ -1,4 +1,4 @@
-﻿using DBContext;
+using DBContext;
 using DBEntity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,19 +17,19 @@ namespace API
     /// 
     /// </summary>
     [Produces("application/json")]
-    [Route("api/project")]
-    public class ProjectController : Controller
+    [Route("api/condominio")]
+    public class CondominioController : Controller
     {
         /// <summary>
         /// 
         /// </summary>
-        protected readonly IProjectRepository _projectRepository;
+        protected readonly ICondominioRepository _projectRepository;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="projectRepository"></param>
-        public ProjectController(IProjectRepository projectRepository)
+        public CondominioController(ICondominioRepository projectRepository)
         {
             _projectRepository = projectRepository;
         }
@@ -41,10 +41,10 @@ namespace API
         [Produces("application/json")]
         [AllowAnonymous]
         [HttpGet]
-        [Route("getprojects")]
-        public ActionResult GetProjects()
+        [Route("getcondominios")]
+        public ActionResult GetCondominios()
         {
-            var ret = _projectRepository.GetProjects();
+            var ret = _projectRepository.GetCondominios();
             return Json(ret);
         }
 
@@ -56,7 +56,7 @@ namespace API
         [Produces("application/json")]
         [AllowAnonymous]
         [HttpGet]
-        [Route("getproject")]
+        [Route("getcondominio")]
         public ActionResult GetProject(int id)
         {
             var ret = _projectRepository.GetProject(id);
